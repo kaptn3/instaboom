@@ -1,0 +1,32 @@
+.header {
+  background-color: #8641bf;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    padding: 30px 50px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    flex-shrink: 0;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+      opacity: .8;
+    }
+
+    &:active,
+    &:visited {
+      color: #fff;
+    }
+  }
+
+  &__logo-img {
+    margin-right: 12px;
+  }
+}
+
