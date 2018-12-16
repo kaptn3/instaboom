@@ -28,6 +28,7 @@
     background-position-x: 16px;
     background-attachment: scroll;
     background-size: 24px;
+    transition: .3s border-color;
 
     &_login {
       background-image: url(../icons/login.svg);
@@ -39,12 +40,12 @@
 
     &:focus {
       outline: none;
-      border-color: #8641BF;
+      border-color: var(--main);
     }
   }
 
   &__btn {
-    background-color: #8641BF;
+    background-color: var(--main);
     width: 100%;
     max-width: 160px;
     display: inline-block;

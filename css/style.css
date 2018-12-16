@@ -305,6 +305,7 @@ img {
 
 html {
   font-size: 16px;
+  color: #38343E;
   font-family: sans-serif; }
 
 body {
@@ -340,11 +341,45 @@ button:focus,
 textarea:focus {
   outline: none; }
 
-p {
-  color: #38343E; }
+:root {
+  --main: #8641BF; }
 
+p {
+  font-weight: 500; }
+
+.p_size_14 {
+  font-size: 14px; }
+
+.h1 {
+  font-size: 38px;
+  font-weight: 900; }
+
+.h2 {
+  font-size: 24px;
+  font-weight: 900; }
+
+.h3 {
+  font-size: 21px;
+  font-weight: 900; }
+
+.link {
+  text-transform: uppercase;
+  color: var(--main);
+  font-weight: 700; }
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 24px; }
+
+  .h2,
+  .h3 {
+    font-size: 16px;
+    text-transform: uppercase; }
+
+  .link {
+    font-size: 14px; } }
 .header {
-  background-color: #8641bf;
+  background-color: var(--main);
   display: flex;
   justify-content: space-between; }
   .header__logo {
@@ -387,16 +422,17 @@ p {
   background-position-y: center;
   background-position-x: 16px;
   background-attachment: scroll;
-  background-size: 24px; }
+  background-size: 24px;
+  transition: .3s border-color; }
   .form__input_login {
     background-image: url(../icons/login.svg); }
   .form__input_password {
     background-image: url(../icons/password.svg); }
   .form__input:focus {
     outline: none;
-    border-color: #8641BF; }
+    border-color: var(--main); }
 .form__btn {
-  background-color: #8641BF;
+  background-color: var(--main);
   width: 100%;
   max-width: 160px;
   display: inline-block;
