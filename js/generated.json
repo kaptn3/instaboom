@@ -1,30 +1,122 @@
 [
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Lupe"
+    "name": "Harriet",
+    "greeting": "Hello"
   },
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Petty"
+    "name": "Marisa",
+    "greeting": "Hello"
   },
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Obrien"
+    "name": "Burt",
+    "greeting": "Hello"
   },
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Lara"
+    "name": "Mathews",
+    "greeting": "Hello"
   },
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Jeanine"
+    "name": "Amy",
+    "greeting": "Hello"
   },
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Roman"
+    "name": "Delacruz",
+    "greeting": "Hello"
   },
   {
     "picture": "http://placehold.it/32x32",
-    "name": "Aurora"
+    "name": "Buckley",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Lora",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Juanita",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Gilda",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Mayo",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Brittney",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Nanette",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Deirdre",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Moody",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Cathy",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "May",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Mamie",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Lidia",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Barry",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Genevieve",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Mays",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Jeannette",
+    "greeting": "Hello"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Nichole",
+    "greeting": "Hello"
   }
 ]
