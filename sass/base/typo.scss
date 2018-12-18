@@ -27,6 +27,11 @@ p {
   font-weight: 700;
 }
 
+.main__header {
+  border-bottom: 4px solid #F7F8FD;
+  padding-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   .h1 {
     font-size: 24px;
