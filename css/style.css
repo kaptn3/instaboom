@@ -446,6 +446,9 @@ p {
 .main {
   width: 100%; }
 
+main {
+  padding: 40px 64px 54px 32px; }
+
 @media (max-width: 768px) {
   .app {
     flex-direction: column; } }
@@ -626,8 +629,11 @@ p {
   text-transform: uppercase;
   border-radius: 6px;
   padding: 15px 0;
-  background-color: var(--main);
+  background-color: #53576F;
+  transition: .3s background-color;
   color: #fff;
   text-align: center; }
+  .gift__btn:hover, .gift__btn:focus {
+    background-color: #8B8E99; }
 
 /*# sourceMappingURL=style.css.map */

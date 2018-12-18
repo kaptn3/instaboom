@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+main {
+  padding: 40px 64px 54px 32px;
+}
+
 @media (max-width: 768px) {
   .app {
     flex-direction: column;

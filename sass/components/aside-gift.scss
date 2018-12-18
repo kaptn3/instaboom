@@ -19,8 +19,14 @@
     text-transform: uppercase;
     border-radius: 6px;
     padding: 15px 0;
-    background-color: var(--main);
+    background-color: #53576F;
+    transition: .3s background-color;
     color: #fff;
     text-align: center;
+
+    &:hover,
+    &:focus {
+      background-color: #8B8E99;
+    }
   }
 }
