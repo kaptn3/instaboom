@@ -363,7 +363,7 @@ a {
 
 p {
   line-height: 1.5;
-  margin: 0 0 1rem; }
+  margin: 0 0 .6em; }
 
 h1,
 h2,
@@ -408,7 +408,8 @@ p {
 
 .main__header {
   border-bottom: 4px solid #F7F8FD;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  margin-bottom: 30px; }
 
 @media (max-width: 768px) {
   .h1 {
@@ -638,5 +639,38 @@ main {
   text-align: center; }
   .gift__btn:hover, .gift__btn:focus {
     background-color: #8B8E99; }
+
+.my-profile {
+  display: flex;
+  margin-bottom: 26px; }
+  .my-profile__photo {
+    margin-right: 15px; }
+  .my-profile__login {
+    display: block;
+    font-weight: 900;
+    font-size: 24px;
+    border-radius: 100%;
+    margin-bottom: 12px; }
+  .my-profile__logout {
+    background-color: #F7C8CB;
+    text-transform: uppercase;
+    color: var(--main);
+    font-weight: 700; }
+
+.sex-buttons {
+  display: flex; }
+
+.sex-button {
+  border: 1px solid #EBECF2;
+  border-right-width: 0;
+  padding: 14px 38px;
+  transition: .3s color; }
+  .sex-button:first-child {
+    border-radius: 6px 0 0 6px; }
+  .sex-button:last-child {
+    border-radius: 0 6px 6px 0;
+    border-right-width: 1px; }
+  .sex-button:hover, .sex-button:focus {
+    color: var(--main); }
 
 /*# sourceMappingURL=style.css.map */

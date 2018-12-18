@@ -1,0 +1,21 @@
+.my-profile {
+  display: flex;
+  margin-bottom: 26px;
+  
+  &__photo {
+    margin-right: 15px;
+  }
+  &__login {
+    display: block;
+    font-weight: 900;
+    font-size: 24px;
+    border-radius: 100%;
+    margin-bottom: 12px;
+  }
+  &__logout {
+    background-color: #F7C8CB;
+    text-transform: uppercase;
+    color: var(--main);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,21 @@
+.sex-buttons {
+  display: flex;
+}
+
+.sex-button {
+  border: 1px solid #EBECF2;
+  border-right-width: 0;
+  padding: 14px 38px;
+  transition: .3s color;
+  &:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+  &:last-child {
+    border-radius: 0 6px 6px 0;
+    border-right-width: 1px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--main);
+  }
+}
