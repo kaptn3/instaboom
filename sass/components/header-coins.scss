@@ -1,0 +1,24 @@
+.header__coins {
+  display: flex;
+}
+
+.coins {
+  &__icon {
+    margin-right: 15px;
+  }
+  &__value {
+    color: #fff;
+    display: block;
+    font-weight: 700;
+  }
+  &__up {
+    color: #fff;
+    opacity: .5;
+    font-size: 14px;
+    transition: .3s opacity;
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

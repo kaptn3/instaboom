@@ -2,9 +2,11 @@
   background-color: var(--main);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
 
   &__logo {
-    padding: 30px 50px;
     display: block;
     color: #fff;
     text-transform: uppercase;

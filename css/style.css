@@ -420,9 +420,11 @@ p {
 .header {
   background-color: var(--main);
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px; }
   .header__logo {
-    padding: 30px 50px;
     display: block;
     color: #fff;
     text-transform: uppercase;
@@ -577,6 +579,23 @@ p {
 @media (max-width: 768px) {
   .select__list {
     max-height: 269px; } }
+.header__coins {
+  display: flex; }
+
+.coins__icon {
+  margin-right: 15px; }
+.coins__value {
+  color: #fff;
+  display: block;
+  font-weight: 700; }
+.coins__up {
+  color: #fff;
+  opacity: .5;
+  font-size: 14px;
+  transition: .3s opacity; }
+  .coins__up:hover, .coins__up:focus {
+    opacity: 1; }
+
 .nav {
   list-style: none;
   margin: 0;
