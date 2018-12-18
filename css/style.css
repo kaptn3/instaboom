@@ -617,8 +617,10 @@ main {
     margin-right: 12px; }
 
 .aside__gift {
-  padding: 30px 25px 45px 25px;
-  text-align: center; }
+  padding: 26px 25px 45px 25px;
+  text-align: center;
+  background-color: #23242E;
+  border-top: 4px solid #4F5366; }
 
 .gift__text {
   margin-top: 35px;
