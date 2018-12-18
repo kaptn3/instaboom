@@ -6,10 +6,19 @@
     display: block;
     padding: 25px 35px;
     color: #fff;
+    &_profile {
+      font-weight: 900;
+    }
     &_active {
       background-color: #53576F;
       border-left: 6px solid var(--main);
       padding-left: 29px;
     }
+  }
+  &__profile-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 12px;
   }
 }

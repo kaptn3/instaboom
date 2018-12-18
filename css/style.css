@@ -466,14 +466,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .aside__header {
-    padding: 25px 35px;
-    font-weight: 900; }
-    .aside__header-photo {
-      width: 32px;
-      height: 32px;
-      border-radius: 100%;
-      margin-right: 12px; }
 
 .form-wrapper {
   max-width: 466px;
@@ -611,10 +603,17 @@ main {
     display: block;
     padding: 25px 35px;
     color: #fff; }
+    .nav__item_profile {
+      font-weight: 900; }
     .nav__item_active {
       background-color: #53576F;
       border-left: 6px solid var(--main);
       padding-left: 29px; }
+  .nav__profile-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 12px; }
 
 .aside__gift {
   padding: 30px 25px 45px 25px;
