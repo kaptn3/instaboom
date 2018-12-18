@@ -20,8 +20,8 @@
             <li><a href="profile.html" class="nav__item nav__item_profile" title="Профиль">
               <img src="https://placehold.it/32x32" alt="Фото профиля" class="nav__profile-photo">rakamakafit
             </a></li>
-            <li><a class="nav__item" href="promotion.html" title="Раскрутка">Раскрутка</a></li>
-            <li><a class="nav__item nav__item_active" href="earn.html" title="Заработать монеты">Заработать монеты</a></li>
+            <li><a class="nav__item nav__item_active" href="promotion.html" title="Раскрутка">Раскрутка</a></li>
+            <li><a class="nav__item" href="earn.html" title="Заработать монеты">Заработать монеты</a></li>
             <li><a class="nav__item" href="" title="Пакетные предложения">Пакетные предложения</a></li>
           </ul>
         </nav>
@@ -48,11 +48,31 @@
         </div>
       </header>
       <main>
-        <h2 class="h1 main__header">Заработать монеты</h2>
+        <h2 class="h1 main__header">Раскрутка</h2>
+        <div class="promotion-div">
+          <h3 class="h2 promotion-div__title">Привязать аккаунт</h3>
+          <p class="promotion-div__text">Введите логин Instagram,<br>
+              чтобы подгрузить данные и фотографии<br>
+              аккаунта для раскрутки.
+          </p>
+          <div class="select promotion-div__select">
+            <img class="select__img" src="icons/login.svg" alt=" ">
+            <input id="loginInput"
+              class="form__input form__input_login"
+              type="text"
+              name="login"
+              placeholder="Логин Instagram"
+              autocomplete="off"
+              required>
+            <a class="select__clear">
+              <img src="icons/clear.svg" alt=" ">
+            </a>
+          </div>
+        </div>
       </main>
     </div>
   </div>
 
 </body>
-
+<script src="js/select.js"></script>
 </html>

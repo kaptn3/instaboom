@@ -1,0 +1,20 @@
+.promotion-div {
+  border: 4px solid #F7F8FD;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 34px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__select {
+    max-width: 426px;
+    margin: 0 auto;
+  }
+}
