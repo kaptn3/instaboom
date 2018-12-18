@@ -1,0 +1,26 @@
+.aside__gift {
+  padding: 30px 25px 45px 25px;
+  text-align: center;
+}
+
+.gift {
+  &__text {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size : 14px;
+    line-height : 20px;
+    opacity: .75;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 15px 0;
+    background-color: var(--main);
+    color: #fff;
+    text-align: center;
+  }
+}

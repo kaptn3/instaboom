@@ -1,0 +1,15 @@
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    display: block;
+    padding: 25px 35px;
+    color: #fff;
+    &_active {
+      background-color: #53576F;
+      border-left: 6px solid var(--main);
+      padding-left: 29px;
+    }
+  }
+}

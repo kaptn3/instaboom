@@ -1,0 +1,21 @@
+.aside {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 256px;
+  background-color: #353845;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__header {
+    padding: 25px 35px;
+    font-weight: 900;
+    &-photo {
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      margin-right: 12px;
+    }
+  }
+}

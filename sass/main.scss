@@ -6,7 +6,11 @@
         'base/root.scss',
         'base/typo.scss';
 
-@import 'layouts/header.scss';
+@import 'layouts/header.scss',
+        'layouts/app.scss',
+        'layouts/aside.scss';
 
 @import 'components/auth-form.scss',
-        'components/select.scss';
+        'components/select.scss',
+        'components/aside-nav.scss',
+        'components/aside-gift.scss';
