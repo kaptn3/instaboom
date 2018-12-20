@@ -544,7 +544,7 @@ main {
   .select__clear {
     display: none;
     margin-right: 10px; }
-    .select__clear object {
+    .select__clear svg {
       pointer-events: none;
       vertical-align: middle; }
     .select__clear:hover .cls-1 {
