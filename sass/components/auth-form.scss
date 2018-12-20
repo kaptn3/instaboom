@@ -40,6 +40,10 @@
       padding-left: 18px;
     }
 
+    &_error {
+      border-color: var(--red);
+    }
+
     &:focus {
       outline: none;
       border-color: var(--main);

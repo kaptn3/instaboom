@@ -100,6 +100,10 @@
     &_active {
       background-color: #F7F8FD;
     }
+
+    &_error {
+      border-color: var(--red);
+    }
   }
 }
 
