@@ -8,21 +8,17 @@ function autocomplete(inp, arr) {
   })
 
   inp.addEventListener("input", function (e) {
-    if (!inp.value) {
-      clear();
-    } else {
+    if (this.value) {
       clearBtn.style.display = 'block';
-    }
-    var divList, divItem, i, val = this.value;
-    closeAllLists();
-
-    if (!this.value) {
+    } else {
       return false;
     }
+
+    var divList, divItem, i, val = this.value;
+    closeAllLists();
   
-    currentFocus = -1;
     divList = document.createElement("div");
-    divList.setAttribute("id", this.id + "autocomplete-list");
+    divList.setAttribute("id", "select-list-" + this.id);
     divList.classList.add("select__list");
     this.parentNode.appendChild(divList);
 
@@ -31,14 +27,25 @@ function autocomplete(inp, arr) {
         divItem = document.createElement("div");
         divItem.classList.add('select__item');
         divItem.innerHTML = `<img class="select__item-img" src="${arr[i].picture}" alt="${arr[i].name}">`;
-        divItem.innerHTML += `<div>${arr[i].name}<span class="select__item-desc">${arr[i].greeting}</span></div>`;
-        divItem.innerHTML += `<input type="hidden" value="${arr[i].name}">`;
+        divItem.innerHTML += `<div><span class="select__item-name">${arr[i].name}</span><span class="select__item-desc">${arr[i].greeting}</span></div>`;
 
         divItem.addEventListener("click", function (e) {
-          hiddenInput = this.getElementsByTagName("input")[0];
-          inp.value = hiddenInput.value;
+          let login = this.querySelector('.select__item-name');
+          let desc = this.querySelector('.select__item-desc');
+          inp.setAttribute('hidden', ''); // скрытие инпута
+          inp.value = login.textContent; // добавляет логин instagram в скрытый input
+
+          let divInput = document.createElement('div');
+          divInput.classList.add('select__item-text')
+
+          divInput.appendChild(login);
+          divInput.appendChild(desc);
+
           image.setAttribute('src', this.getElementsByTagName('img')[0].getAttribute('src'));
           image.classList.add('select__img_item');
+
+          document.querySelector('.select').insertBefore(divInput, clearBtn);
+
           closeAllLists();
         });
         divList.appendChild(divItem);
@@ -50,6 +57,10 @@ function autocomplete(inp, arr) {
     clearBtn.removeAttribute('style');
     image.classList.remove('select__img_item');
     image.setAttribute('src', 'icons/login.svg');
+    inp.removeAttribute('hidden');
+    if (document.querySelector('.select__item-text')) {
+      document.querySelector('.select__item-text').remove();
+    }
     inp.value = '';
   }
 
@@ -70,6 +81,6 @@ fetch('https://raw.githubusercontent.com/kaptn3/instaboom/master/js/generated.js
   .then(function (response) {
     return response.json();
   })
-  .then(function (json) {
+  .then(function (json) {// добавить иф и к каждому id  сделать разную обработку на клик функцию
     autocomplete(document.getElementById("loginInput"), json);
   });

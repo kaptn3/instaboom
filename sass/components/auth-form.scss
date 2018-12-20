@@ -19,12 +19,8 @@
 
   &__input {
     width: 100%;
+    border: none;
     background-color: #F7F8FD;
-    margin-bottom: 16px;
-    border: 1px solid #EBECF2;
-    border-radius: 8px;
-    padding: 14px 20px 14px 56px;
-    transition: .3s border-color;
 
     &_password {
       background-image: url(../icons/password.svg);
@@ -32,7 +28,12 @@
       background-position-y: center;
       background-position-x: 16px;
       background-attachment: scroll;
-      background-size: 24px;
+      background-size: 22px;
+      border: 1px solid #EBECF2;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      padding: 14px 20px 14px 56px;
+      transition: .3s border-color;
     }
 
     &:focus {

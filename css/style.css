@@ -483,19 +483,20 @@ main {
   line-height: 20px; }
 .form__input {
   width: 100%;
-  background-color: #F7F8FD;
-  margin-bottom: 16px;
-  border: 1px solid #EBECF2;
-  border-radius: 8px;
-  padding: 14px 20px 14px 56px;
-  transition: .3s border-color; }
+  border: none;
+  background-color: #F7F8FD; }
   .form__input_password {
     background-image: url(../icons/password.svg);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 16px;
     background-attachment: scroll;
-    background-size: 24px; }
+    background-size: 22px;
+    border: 1px solid #EBECF2;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 14px 20px 14px 56px;
+    transition: .3s border-color; }
   .form__input:focus {
     outline: none;
     border-color: var(--main); }
@@ -528,7 +529,14 @@ main {
   position: relative;
   display: inline-block;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  border: 1px solid #EBECF2;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 14px 20px 14px 56px;
+  transition: .3s border-color;
+  background-color: #F7F8FD;
+  transition: .3s border-color; }
   .select__clear {
     position: absolute;
     top: 12px;
@@ -536,7 +544,7 @@ main {
     display: none; }
   .select__img {
     position: absolute;
-    width: 24px;
+    width: 22px;
     top: 11px;
     left: 17px; }
     .select__img_item {
@@ -561,7 +569,7 @@ main {
     display: flex;
     align-items: center;
     font-size: 14px; }
-    .select__item-desc {
+    .select__item-name, .select__item-desc {
       display: block; }
     .select__item-img {
       border-radius: 100%;
