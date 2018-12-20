@@ -577,6 +577,11 @@ main {
       width: 100%; }
       .select__item-text .select__item-name {
         color: var(--purple-hover); }
+    .select__item-name {
+      font-weight: 700; }
+    .select__item-desc {
+      font-weight: 300;
+      font-size: 14px; }
     .select__item-name, .select__item-desc {
       display: block; }
     .select__item-img {
