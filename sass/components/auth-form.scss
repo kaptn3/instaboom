@@ -21,19 +21,23 @@
     width: 100%;
     border: none;
     background-color: #F7F8FD;
+    padding: 14px 20px 14px 56px;
+    border-radius: 8px;
 
     &_password {
       background-image: url(../icons/password.svg);
       background-repeat: no-repeat;
       background-position-y: center;
-      background-position-x: 16px;
+      background-position-x: 18px;
       background-attachment: scroll;
-      background-size: 22px;
+      background-size: 20px;
       border: 1px solid #EBECF2;
-      border-radius: 8px;
       margin-bottom: 16px;
-      padding: 14px 20px 14px 56px;
       transition: .3s border-color;
+    }
+
+    &_login {
+      padding-left: 18px;
     }
 
     &:focus {

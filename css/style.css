@@ -484,19 +484,21 @@ main {
 .form__input {
   width: 100%;
   border: none;
-  background-color: #F7F8FD; }
+  background-color: #F7F8FD;
+  padding: 14px 20px 14px 56px;
+  border-radius: 8px; }
   .form__input_password {
     background-image: url(../icons/password.svg);
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: 16px;
+    background-position-x: 18px;
     background-attachment: scroll;
-    background-size: 22px;
+    background-size: 20px;
     border: 1px solid #EBECF2;
-    border-radius: 8px;
     margin-bottom: 16px;
-    padding: 14px 20px 14px 56px;
     transition: .3s border-color; }
+  .form__input_login {
+    padding-left: 18px; }
   .form__input:focus {
     outline: none;
     border-color: var(--main); }
@@ -527,31 +529,28 @@ main {
 
 .select {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-align: left;
   width: 100%;
+  padding-left: 12px;
+  height: 48px;
   border: 1px solid #EBECF2;
   border-radius: 8px;
   margin-bottom: 16px;
-  padding: 14px 20px 14px 56px;
   transition: .3s border-color;
   background-color: #F7F8FD;
   transition: .3s border-color; }
   .select__clear {
-    position: absolute;
-    top: 12px;
-    right: 10px;
-    display: none; }
+    display: none;
+    margin-right: 10px; }
   .select__img {
-    position: absolute;
-    width: 22px;
-    top: 11px;
-    left: 17px; }
+    padding-left: 8px; }
     .select__img_item {
       border-radius: 100%;
       width: 32px;
-      top: 8px;
-      left: 13px; }
+      padding-left: 0;
+      margin-right: 10px; }
   .select__list {
     position: absolute;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
@@ -569,6 +568,10 @@ main {
     display: flex;
     align-items: center;
     font-size: 14px; }
+    .select__item-text {
+      width: 100%; }
+      .select__item-text .select__item-name {
+        color: var(--purple-hover); }
     .select__item-name, .select__item-desc {
       display: block; }
     .select__item-img {

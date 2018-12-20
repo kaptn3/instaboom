@@ -1,35 +1,32 @@
 .select {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-align: left;
   width: 100%;
+  padding-left: 12px;
+  height: 48px;
 
   border: 1px solid #EBECF2;
   border-radius: 8px;
   margin-bottom: 16px;
-  padding: 14px 20px 14px 56px;
   transition: .3s border-color;
   background-color: #F7F8FD;
   transition: .3s border-color;
 
   &__clear {
-    position: absolute;
-    top: 12px;
-    right: 10px;
     display: none;
+    margin-right: 10px;
   }
 
   &__img {
-    position: absolute;
-    width: 22px;
-    top: 11px;
-    left: 17px;
+    padding-left: 8px;
 
     &_item {
       border-radius: 100%;
       width: 32px;
-      top: 8px;
-      left: 13px;
+      padding-left: 0;
+      margin-right: 10px;
     }
   }
 
@@ -52,6 +49,14 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+
+    &-text {
+      width: 100%;
+
+      .select__item-name {
+        color: var(--purple-hover);
+      }
+    }
 
     &-name,
     &-desc {
