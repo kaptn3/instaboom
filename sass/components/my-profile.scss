@@ -1,9 +1,13 @@
 .my-profile {
   display: flex;
+  align-items: center;
   margin-bottom: 26px;
   
   &__photo {
     margin-right: 15px;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
   }
   &__login {
     display: block;
@@ -13,7 +17,6 @@
     margin-bottom: 12px;
   }
   &__logout {
-    background-color: #F7C8CB;
     text-transform: uppercase;
     color: var(--main);
     font-weight: 700;
