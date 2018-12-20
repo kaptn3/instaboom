@@ -6,13 +6,22 @@
     display: block;
     padding: 25px 35px;
     color: #fff;
+    opacity: .7;
+    transition: .3s opacity;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
     &_profile {
       font-weight: 900;
+      opacity: 1;
     }
     &_active {
       background-color: #53576F;
       border-left: 6px solid var(--main);
       padding-left: 29px;
+      opacity: 1;
     }
   }
   &__profile-photo {

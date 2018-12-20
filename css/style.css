@@ -632,13 +632,19 @@ main {
   .nav__item {
     display: block;
     padding: 25px 35px;
-    color: #fff; }
+    color: #fff;
+    opacity: .7;
+    transition: .3s opacity; }
+    .nav__item:hover, .nav__item:focus {
+      opacity: 1; }
     .nav__item_profile {
-      font-weight: 900; }
+      font-weight: 900;
+      opacity: 1; }
     .nav__item_active {
       background-color: #53576F;
       border-left: 6px solid var(--main);
-      padding-left: 29px; }
+      padding-left: 29px;
+      opacity: 1; }
   .nav__profile-photo {
     width: 32px;
     height: 32px;
