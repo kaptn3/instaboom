@@ -17,6 +17,15 @@
   &__clear {
     display: none;
     margin-right: 10px;
+
+    object {
+      pointer-events: none;
+      vertical-align: middle;
+    }
+
+    &:hover .cls-1 {
+      stroke: var(--purple-hover);
+    }
   }
 
   &__img {
@@ -26,7 +35,7 @@
       border-radius: 100%;
       width: 32px;
       padding-left: 0;
-      margin-right: 10px;
+      margin-right: 12px;
     }
   }
 
@@ -90,4 +99,20 @@
   .select__list {
     max-height: 269px;
   }
+}
+
+// Styles for svg
+.cls-1, .cls-2 {
+  fill: none;
+}
+
+.cls-1 {
+  stroke: #b99fcf;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  transition: .3s stroke;
+}
+.cls-1:hover {
+  stroke: #fff;
 }

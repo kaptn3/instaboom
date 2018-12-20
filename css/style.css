@@ -544,13 +544,18 @@ main {
   .select__clear {
     display: none;
     margin-right: 10px; }
+    .select__clear object {
+      pointer-events: none;
+      vertical-align: middle; }
+    .select__clear:hover .cls-1 {
+      stroke: var(--purple-hover); }
   .select__img {
     padding-left: 8px; }
     .select__img_item {
       border-radius: 100%;
       width: 32px;
       padding-left: 0;
-      margin-right: 10px; }
+      margin-right: 12px; }
   .select__list {
     position: absolute;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
@@ -590,6 +595,19 @@ main {
 @media (max-width: 768px) {
   .select__list {
     max-height: 269px; } }
+.cls-1, .cls-2 {
+  fill: none; }
+
+.cls-1 {
+  stroke: #b99fcf;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  transition: .3s stroke; }
+
+.cls-1:hover {
+  stroke: #fff; }
+
 .header__coins {
   display: flex; }
 
