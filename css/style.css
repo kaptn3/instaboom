@@ -646,6 +646,7 @@ main {
     opacity: .7;
     transition: .3s opacity; }
     .nav__item:hover, .nav__item:focus {
+      background-color: #53576F;
       opacity: 1; }
     .nav__item_profile {
       font-weight: 900;
