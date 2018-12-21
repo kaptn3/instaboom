@@ -6,3 +6,4 @@
 - [Заработать монеты](https://kaptn.ru/instaboom/earn.html)
 - [Раскрутка: выбрать аккаунт](https://kaptn.ru/instaboom/promotion.html)
 - [Пополнить баланс](https://kaptn.ru/instaboom/up-balance.html)
+- [Пакетные предложения](https://kaptn.ru/instaboom/packets-offer.html)

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #76d13a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <symbol id="marker_check" data-name="marker_check" viewBox="0 0 16 16">
+      <g>
+        <polyline class="cls-1" points="12 5 6.5 10.5 4 8"/>
+        <rect class="cls-2" x="2" y="2" width="12" height="12"/>
+      </g>
+    </symbol>
+  </defs>
+  <title>check-mark</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="banner_friend_big_2" data-name="banner_friend_big 2">
+        <use id="marker_check-3" data-name="marker_check" width="16" height="16" xlink:href="#marker_check"/>
+      </g>
+    </g>
+  </g>
+</svg>
