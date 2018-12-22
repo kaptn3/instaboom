@@ -832,8 +832,10 @@ main {
 .packets-offer {
   display: flex;
   margin-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   overflow-x: auto; }
+  .packets-offer::-webkit-scrollbar {
+    display: none; }
   .packets-offer__item {
     border-radius: 8px;
     border: 4px solid #F7F8FD;
@@ -844,7 +846,7 @@ main {
     .packets-offer__item:last-child {
       margin-right: 0; }
     .packets-offer__item:hover, .packets-offer__item:focus {
-      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.2); }
   .packets-offer__name {
     padding: 22px;
     background-color: #F7F8FD; }

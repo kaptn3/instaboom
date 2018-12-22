@@ -1,8 +1,12 @@
 .packets-offer {
   display: flex;
   margin-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &__item {
     border-radius: 8px;
@@ -18,7 +22,7 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0 5px 5px 0 rgba($color: #000, $alpha: .2);
+      box-shadow: 0 5px 15px 2px rgba(0, 0, 0, .2);
     }
   }
 
