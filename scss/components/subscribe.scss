@@ -1,0 +1,53 @@
+.subscribe {
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__reward {
+    background-color: #FEF3D6;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 6px 18px;
+    margin-left: 16px;
+  }
+  
+  &__nav-btns {
+    margin-left: auto;
+    display: flex;
+  }
+
+  &__arrow {
+    height: 46px;
+    width: 61px;
+    background-color: #F7F8FD;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 0;
+    transition: .4s background-image;
+
+    &_next {
+      background-image: url(../icons/next.svg);
+      border-radius: 0 7px 7px 0;
+
+      &:hover,
+      &:focus {
+        background-image: url(../icons/next-hover.svg);
+      }
+    }
+
+    &_prev {
+      background-image: url(../icons/prev.svg);
+      border-radius: 7px 0 0 7px;
+      margin-right: 1px;
+
+      &:hover,
+      &:focus {
+        background-image: url(../icons/prev-hover.svg);
+      }
+    }
+  }
+}

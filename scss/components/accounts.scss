@@ -1,0 +1,64 @@
+.accounts {
+  display: flex;
+
+  &__item {
+    border: 4px solid #F7F8FD;
+    border-radius: 8px;
+    position: relative;
+    width: 307px;
+    font-size: 14px;
+    padding: 20px 30px 15px 30px;
+    text-align: center;
+  }
+
+  &__photo {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 24px;
+  }
+
+  &__login {
+    font-weight: 900;
+    margin-bottom: 22px;
+  }
+
+  &__close {
+    background-image: url(../icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .4s background-image;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    &:hover,
+    &:focus {
+      background-image: url(../icons/close-hover.svg);
+    }
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    background-color: #F7F8FD;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 700;
+    width: 100%;
+    color: var(--main);
+    transition: .4s color;
+
+    &:hover,
+    &:focus {
+      color: var(--purple-hover);
+    }
+  }
+}
