@@ -1062,5 +1062,17 @@ main {
   transition: .4s background-image; }
   .rate-content__bar:hover, .rate-content__bar:focus {
     background-image: url(../icons/hover/bar.svg); }
+.rate-content__btn-watch {
+  margin-top: 6px;
+  text-transform: uppercase;
+  background-color: #F7F8FD;
+  font-weight: 700;
+  padding: 15px 40px;
+  display: block;
+  color: var(--main);
+  border-radius: 8px;
+  transition: .3s color, .3s color; }
+  .rate-content__btn-watch:focus, .rate-content__btn-watch:hover {
+    color: var(--purple-hover); }
 
 /*# sourceMappingURL=style.css.map */
