@@ -10,7 +10,9 @@
         'layouts/app.scss',
         'layouts/aside.scss';
 
-@import 'components/auth-form.scss',
+@import 'components/arrows.scss',
+        'components/rates.scss',
+        'components/auth-form.scss',
         'components/select.scss',
         'components/header-coins.scss',
         'components/aside-nav.scss',
@@ -21,4 +23,5 @@
         'components/up-balance.scss',
         'components/packets-offer.scss',
         'components/subscribe.scss',
-        'components/accounts.scss';
+        'components/accounts.scss',
+        'components/rate-content.scss';
