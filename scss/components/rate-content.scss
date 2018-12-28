@@ -8,12 +8,8 @@
 
   &__accounts {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     margin-right: -42px;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
   &__video-icon {
@@ -80,6 +76,14 @@
     &:focus,
     &:hover {
       color: var(--purple-hover);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .rate-content {
+    &__accounts {
+      overflow-x: auto;
     }
   }
 }

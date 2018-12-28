@@ -1,12 +1,8 @@
 .accounts {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   padding-bottom: 15px;
   margin-right: -42px;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 
   &__item {
     border: 4px solid #F7F8FD;
@@ -76,5 +72,11 @@
     &:focus {
       color: var(--purple-hover);
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .accounts {
+    overflow-x: auto;
   }
 }
