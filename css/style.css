@@ -382,7 +382,8 @@ textarea:focus {
   --main: #8641BF;
   --red: #DB5151;
   --purple-hover: #db02ba;
-  --green: #76D13A; }
+  --green: #76D13A;
+  --grey: #F7F8FD; }
 
 p {
   font-weight: 500; }
@@ -1023,9 +1024,6 @@ main {
     .accounts__btn:hover, .accounts__btn:focus {
       color: var(--purple-hover); }
 
-@media (max-width: 1024px) {
-  .accounts {
-    overflow-x: auto; } }
 .rate-content__nav {
   display: flex;
   justify-content: space-between;
@@ -1090,8 +1088,34 @@ main {
   .rate-content__btn-watch:focus, .rate-content__btn-watch:hover {
     color: var(--purple-hover); }
 
-@media (max-width: 1024px) {
-  .rate-content__wrapper {
-    overflow-x: auto; } }
+.invite-promo {
+  border-radius: 8px;
+  border: 4px solid var(--grey);
+  margin-bottom: 32px;
+  padding: 30px 30px 32px 32px;
+  display: flex;
+  align-items: center; }
+  .invite-promo__icon {
+    background-color: var(--grey);
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 20px;
+    width: 120px;
+    height: 120px; }
+  .invite-promo__content {
+    margin-left: 30px; }
+  .invite-promo__header {
+    margin-bottom: 16px; }
+  .invite-promo__more {
+    background-color: var(--grey);
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: block;
+    width: 158px;
+    padding: 15px 0;
+    font-weight: 700;
+    color: var(--main);
+    text-align: center;
+    margin-top: 16px; }
 
 /*# sourceMappingURL=style.css.map */

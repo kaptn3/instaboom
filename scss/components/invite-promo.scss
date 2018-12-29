@@ -1,0 +1,38 @@
+.invite-promo {
+  border-radius: 8px;
+  border: 4px solid var(--grey);
+  margin-bottom: 32px;
+  padding: 30px 30px 32px 32px;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    background-color: var(--grey);
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 20px;
+    width: 120px;
+    height: 120px;
+  }
+
+  &__content {
+    margin-left: 30px;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__more {
+    background-color: var(--grey);
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: block;
+    width: 158px;
+    padding: 15px 0;
+    font-weight: 700;
+    color: var(--main);
+    text-align: center;
+    margin-top: 16px;
+  }
+}
