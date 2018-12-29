@@ -34,5 +34,11 @@
     color: var(--main);
     text-align: center;
     margin-top: 16px;
+    transition: .2s color;
+
+    &:hover,
+    &:focus {
+      color: var(--purple-hover);
+    }
   }
 }

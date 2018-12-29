@@ -1129,6 +1129,9 @@ main {
     font-weight: 700;
     color: var(--main);
     text-align: center;
-    margin-top: 16px; }
+    margin-top: 16px;
+    transition: .2s color; }
+    .invite-promo__more:hover, .invite-promo__more:focus {
+      color: var(--purple-hover); }
 
 /*# sourceMappingURL=style.css.map */
