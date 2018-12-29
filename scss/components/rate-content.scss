@@ -6,10 +6,15 @@
     margin-bottom: 18px;
   }
 
-  &__accounts {
-    display: flex;
+  &__wrapper {
     overflow-x: hidden;
     margin-right: -42px;
+  }
+
+  &__accounts {
+    display: flex;
+    width: fit-content;
+    transition: .7s transform;
   }
 
   &__video-icon {
@@ -32,6 +37,10 @@
     flex-shrink: 0;
     padding: 22px 21px 18px 21px;
     margin-right: 26px;
+
+    &:last-child {
+      margin-right: 42px;
+    }
   }
 
   &__actions {
@@ -82,7 +91,7 @@
 
 @media (max-width: 1024px) {
   .rate-content {
-    &__accounts {
+    &__wrapper {
       overflow-x: auto;
     }
   }

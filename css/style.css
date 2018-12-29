@@ -768,14 +768,20 @@ main {
   border-right-width: 0;
   padding: 14px 38px;
   transition: .3s color;
-  font-weight: 500; }
+  font-weight: 700; }
   .sex-button:first-child {
     border-radius: 6px 0 0 6px; }
   .sex-button:last-child {
     border-radius: 0 6px 6px 0;
     border-right-width: 1px; }
   .sex-button:hover, .sex-button:focus {
-    color: var(--main); }
+    color: var(--purple-hover); }
+  .sex-button_selected {
+    background-color: #37353d;
+    border-color: #37353d;
+    color: #fff; }
+    .sex-button_selected:hover, .sex-button_selected:focus {
+      color: #fff; }
 
 .promotion-div {
   border: 4px solid #F7F8FD;
@@ -958,12 +964,13 @@ main {
     margin-left: auto; }
 
 .accounts {
-  display: flex;
-  overflow-x: auto;
-  padding-bottom: 15px;
+  overflow-x: hidden;
   margin-right: -42px; }
-  .accounts::-webkit-scrollbar {
-    display: none; }
+  .accounts__list {
+    display: flex;
+    padding-bottom: 15px;
+    width: fit-content;
+    transition: .7s transform; }
   .accounts__item {
     border: 4px solid #F7F8FD;
     border-radius: 8px;
@@ -976,6 +983,8 @@ main {
     flex-direction: column;
     margin-right: 32px;
     transition: .3s box-shadow; }
+    .accounts__item:last-child {
+      margin-right: 42px; }
     .accounts__item:hover, .accounts__item:focus {
       box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.2); }
   .accounts__photo {
@@ -1014,17 +1023,21 @@ main {
     .accounts__btn:hover, .accounts__btn:focus {
       color: var(--purple-hover); }
 
+@media (max-width: 1024px) {
+  .accounts {
+    overflow-x: auto; } }
 .rate-content__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18px; }
+.rate-content__wrapper {
+  overflow-x: hidden;
+  margin-right: -42px; }
 .rate-content__accounts {
   display: flex;
-  overflow-x: auto;
-  margin-right: -42px; }
-  .rate-content__accounts::-webkit-scrollbar {
-    display: none; }
+  width: fit-content;
+  transition: .7s transform; }
 .rate-content__video-icon {
   border-radius: 100%;
   width: 48px;
@@ -1043,6 +1056,8 @@ main {
   flex-shrink: 0;
   padding: 22px 21px 18px 21px;
   margin-right: 26px; }
+  .rate-content__item:last-child {
+    margin-right: 42px; }
 .rate-content__actions {
   margin-top: 8px;
   display: flex;
@@ -1074,5 +1089,9 @@ main {
   transition: .3s color, .3s color; }
   .rate-content__btn-watch:focus, .rate-content__btn-watch:hover {
     color: var(--purple-hover); }
+
+@media (max-width: 1024px) {
+  .rate-content__wrapper {
+    overflow-x: auto; } }
 
 /*# sourceMappingURL=style.css.map */

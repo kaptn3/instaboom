@@ -1,8 +1,13 @@
 .accounts {
-  display: flex;
   overflow-x: hidden;
-  padding-bottom: 15px;
   margin-right: -42px;
+
+  &__list {
+    display: flex;
+    padding-bottom: 15px;
+    width: fit-content;
+    transition: .7s transform;
+  }
 
   &__item {
     border: 4px solid #F7F8FD;
@@ -16,6 +21,10 @@
     flex-direction: column;
     margin-right: 32px;
     transition: .3s box-shadow;
+
+    &:last-child {
+      margin-right: 42px;
+    }
 
     &:hover,
     &:focus {
