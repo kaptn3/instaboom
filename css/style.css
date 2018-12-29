@@ -502,17 +502,30 @@ main {
       .arrows__item_prev:hover, .arrows__item_prev:focus {
         background-image: url(../icons/hover/prev.svg); }
 
+.rates__reward-like {
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  width: 100px;
+  background-color: #FFAF47;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 18px;
+  margin-left: 16px;
+  box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.2); }
 .rates__item {
   height: 48px;
   width: 62px;
-  background-color: #F7F8FD;
+  background-color: var(--grey);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   padding: 0; }
   .rates__item_like {
     background-image: url(../icons/like.svg);
-    border-radius: 7px 0 0 7px; }
+    border-radius: 7px 0 0 7px;
+    position: relative; }
     .rates__item_like:hover, .rates__item_like:focus {
       background-image: url(../icons/hover/like.svg); }
   .rates__item_dislike {
