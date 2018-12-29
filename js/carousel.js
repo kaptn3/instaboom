@@ -1,7 +1,13 @@
 let carousel = (direction, wrapper, list) => {
   const sizeWrap = wrapper.offsetWidth;
   const sizeList = list.offsetWidth;
-  let x = 0;
+  let x;
+  if (list.getAttribute('data-left')) {
+    x = Number(list.getAttribute('data-left'));
+  } else {
+    x = 0;
+    list.setAttribute('data-left', '0');
+  }
 
   if (sizeList > sizeWrap) {
     if (direction === 'left') {
@@ -9,6 +15,7 @@ let carousel = (direction, wrapper, list) => {
     } else {
       x = Math.max(x - sizeWrap, sizeWrap - sizeList);
     }
+    list.setAttribute('data-left', x);
     list.style.transform = `translateX(${x}px)`;
   }
 }
