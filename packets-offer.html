@@ -7,6 +7,7 @@ title: Пакетные предложения
   <p class="p_size_14">Пакетные предложения – это стимуляция естественной активности пользователей Instagram.<br>
     Действуют на новые публикации, которые были сделаны с момента оплаты пакета.</p>
   <div class="packets-offer">
+    {% for i in (1..3) %}
     <div class="packets-offer__item">
       <header class="packets-offer__name">
         <h3 class="h2">Пакет 500</h3>
@@ -22,35 +23,6 @@ title: Пакетные предложения
         <a href="#" class="packets-offer__btn">Купить</a>
       </div>
     </div>
-    <div class="packets-offer__item">
-      <header class="packets-offer__name">
-        <h3 class="h2">Пакет 500</h3>
-      </header>
-      <div class="packets-offer__content">
-        <ul class="packets-offer__list">
-          <li class="packets-offer__list-item">500 лайков</li>
-          <li class="packets-offer__list-item">500 просмотров видео</li>
-          <li class="packets-offer__list-item">50 комментов</li>
-          <li class="packets-offer__list-item packets-offer__list-item_warn">до 20 постов в месяц </li>
-        </ul>
-        <span class="packets-offer__price">5 499 в месяц</span>
-        <a href="#" class="packets-offer__btn">Купить</a>
-      </div>
-    </div>
-    <div class="packets-offer__item">
-      <header class="packets-offer__name">
-        <h3 class="h2">Пакет 500</h3>
-      </header>
-      <div class="packets-offer__content">
-        <ul class="packets-offer__list">
-          <li class="packets-offer__list-item">500 лайков</li>
-          <li class="packets-offer__list-item">500 просмотров видео</li>
-          <li class="packets-offer__list-item">50 комментов</li>
-          <li class="packets-offer__list-item packets-offer__list-item_warn">до 20 постов в месяц </li>
-        </ul>
-        <span class="packets-offer__price">5 499 в месяц</span>
-        <a href="#" class="packets-offer__btn">Купить</a>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </main>
