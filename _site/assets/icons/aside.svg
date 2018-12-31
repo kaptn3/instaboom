@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.16" height="67" viewBox="0 0 50.16 67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcf3d6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>aside</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g>
+        <polyline class="cls-1" points="43.94 41.92 43.94 65.5 6.22 65.5 6.22 41.92"/>
+        <rect class="cls-1" x="1.5" y="30.13" width="47.16" height="11.79"/>
+        <line class="cls-1" x1="28.45" y1="65.5" x2="28.45" y2="30.13"/>
+        <line class="cls-1" x1="21.71" y1="65.5" x2="21.71" y2="30.13"/>
+        <path class="cls-1" d="M25.08,30.13H14.47a5.9,5.9,0,1,1,0-11.79C22.72,18.34,25.08,30.13,25.08,30.13Z"/>
+        <path class="cls-1" d="M25.08,30.13H35.69a5.9,5.9,0,0,0,0-11.79C27.44,18.34,25.08,30.13,25.08,30.13Z"/>
+        <line class="cls-1" x1="25.08" y1="10.76" x2="25.08" y2="1.5"/>
+        <line class="cls-1" x1="18.25" y1="10.76" x2="11.7" y2="4.21"/>
+        <line class="cls-1" x1="31.91" y1="10.76" x2="38.46" y2="4.21"/>
+      </g>
+    </g>
+  </g>
+</svg>

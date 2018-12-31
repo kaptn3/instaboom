@@ -1,97 +1,40 @@
-<!doctype html>
-<html lang="ru">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <title>Заработать монеты</title>
-</head>
-
-<body>
-  <div class="app">
-    <aside class="aside">
-      <div>
-        <nav>
-          <ul class="nav">
-            <li><a href="profile.html" class="nav__item nav__item_profile" title="Профиль">
-                <img src="https://placehold.it/32x32" alt="Фото профиля" class="nav__profile-photo">rakamakafit
-              </a></li>
-            <li><a class="nav__item nav__item_active" href="promotion.html" title="Раскрутка">Раскрутка</a></li>
-            <li><a class="nav__item" href="earn.html" title="Заработать монеты">Заработать монеты</a></li>
-            <li><a class="nav__item" href="packets-offer.html" title="Пакетные предложения">Пакетные предложения</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="aside__gift">
-        <img src="icons/aside.svg" alt="">
-        <p class="gift__text">Подари друзьям 50 монет,<br>
-          чтобы они попробовали<br>
-          Instaboom.<br>
-          И получи 20 монет, когда они пополнят свой счёт.</p>
-        <a href="#" class="gift__btn">Подробнее</a>
-      </div>
-    </aside>
-    <div class="main">
-      <header class="header">
-        <a class="header__logo" href="auth.html">
-          <img class="header__logo-img" src="img/logo.svg" alt="Instaboom" title="Instaboom Logotype">Instaboom</a>
-        <div class="header__coins">
-          <img class="coins__icon" src="icons/coins.svg" alt=" ">
-          <div class="">
-            <span class="coins__value">10 000 монет</span>
-            <a class="coins__up" href="#">Пополнить</a>
-          </div>
-        </div>
-      </header>
-      <main>
-        <h2 class="h1 main__header">Раскрутка</h2>
-        <div class="promotion-div">
-          <h3 class="h2 promotion-div__title">Привязать аккаунт</h3>
-          <p class="promotion-div__text">Введите логин Instagram,<br>
-            чтобы подгрузить данные и фотографии<br>
-            аккаунта для раскрутки.
-          </p>
-          <div class="select promotion-div__select">
-            <img class="select__img" src="icons/login.svg" alt=" ">
-            <input
-              id="loginInput"
-              class="form__input form__input_login"
-              type="text"
-              name="login"
-              placeholder="Логин Instagram"
-              autocomplete="off"
-              required>
-            <a class="select__clear">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
-                viewBox="0 0 24 24">
-                <defs>
-                  <symbol id="cross_" data-name="cross_" viewBox="0 0 24 24">
-                    <g>
-                      <line class="cls-1" x1="18" y1="6" x2="6" y2="18" />
-                      <line class="cls-1" x1="6" y1="6" x2="18" y2="18" />
-                    </g>
-                    <rect class="cls-2" width="24" height="24" />
-                  </symbol>
-                </defs>
-                <title>clear</title>
-                <g id="Слой_2" data-name="Слой 2">
-                  <g id="Layer_1" data-name="Layer 1">
-                    <use id="cross_3" data-name="cross_" width="24" height="24" xlink:href="#cross_" />
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </main>
+---
+layout: page
+title: Раскрутка
+scripts: select
+---
+<main>
+  <h2 class="h1 main__header">Раскрутка</h2>
+  <div class="promotion-div">
+    <h3 class="h2 promotion-div__title">Привязать аккаунт</h3>
+    <p class="promotion-div__text">Введите логин Instagram,<br>
+      чтобы подгрузить данные и фотографии<br>
+      аккаунта для раскрутки.
+    </p>
+    <div class="select promotion-div__select">
+      <img class="select__img" src="assets/icons/login.svg" alt=" ">
+      <input id="loginInput" class="form__input form__input_login" type="text" name="login" placeholder="Логин Instagram"
+        autocomplete="off" required>
+      <a class="select__clear">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+          viewBox="0 0 24 24">
+          <defs>
+            <symbol id="cross_" data-name="cross_" viewBox="0 0 24 24">
+              <g>
+                <line class="cls-1" x1="18" y1="6" x2="6" y2="18" />
+                <line class="cls-1" x1="6" y1="6" x2="18" y2="18" />
+              </g>
+              <rect class="cls-2" width="24" height="24" />
+            </symbol>
+          </defs>
+          <title>clear</title>
+          <g id="Слой_2" data-name="Слой 2">
+            <g id="Layer_1" data-name="Layer 1">
+              <use id="cross_3" data-name="cross_" width="24" height="24" xlink:href="#cross_" />
+            </g>
+          </g>
+        </svg>
+      </a>
     </div>
   </div>
-
-</body>
-<script src="js/select.js"></script>
-
-</html>
+</main>

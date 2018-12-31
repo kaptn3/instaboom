@@ -56,7 +56,7 @@ function autocomplete(inp, arr) {
   function clear() {
     clearBtn.removeAttribute('style');
     image.classList.remove('select__img_item');
-    image.setAttribute('src', 'icons/login.svg');
+    image.setAttribute('src', 'assets/icons/login.svg');
     inp.removeAttribute('hidden');
     if (document.querySelector('.select__item-text')) {
       document.querySelector('.select__item-text').remove();

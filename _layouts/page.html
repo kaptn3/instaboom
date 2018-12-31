@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="app">
+  {% include aside.html %}
+  <div class="main">
+    {% include header.html %}
+    {{ content }}
+  </div>
+</div>
+{% for script in page.scripts %}
+<script src="assets/js/{{ script }}.js"></script>
+{% endfor %}

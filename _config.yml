@@ -1,0 +1,8 @@
+title: Instaboom
+baseurl: ""
+url: "https://kaptn.ru/instaboom"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
