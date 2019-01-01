@@ -1,0 +1,25 @@
+.loader {
+  background: url(assets/icons/load.svg) no-repeat center scroll;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  animation: .5s linear 0s normal none infinite running rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

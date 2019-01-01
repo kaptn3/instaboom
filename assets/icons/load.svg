@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke: #db02ba;
+      }
+
+      .cls-2 {
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="7" y1="26" x2="7" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#db02ba"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <symbol id="loader" data-name="loader" viewBox="0 0 26 26">
+      <path class="cls-1" d="M13,1a12,12,0,0,1,0,24"/>
+      <path class="cls-2" d="M13,25A12,12,0,0,1,1,13"/>
+    </symbol>
+  </defs>
+  <title>load</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <use width="26" height="26" xlink:href="#loader"/>
+    </g>
+  </g>
+</svg>
