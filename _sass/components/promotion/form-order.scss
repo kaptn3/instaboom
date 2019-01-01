@@ -1,0 +1,47 @@
+.form-order {
+  background: #fff;
+  width: 288px;
+  padding: 22px 16px 32px 18px;
+
+  &__wrapper {
+    margin-bottom: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    margin-bottom: 28px;
+  }
+
+  &__score {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sum {
+    font-weight: 900;
+  }
+
+  &__btn {
+    border-radius: 8px;
+    background-color: var(--main);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px;
+    margin-top: 32px;
+
+    &:disabled {
+      opacity: .5;
+    }
+  }
+}
+
+div.form-order__wrapper:nth-of-type(2) {
+  border-bottom: 4px solid var(--grey);
+  padding-bottom: 16px;
+  height: 64px;
+}
