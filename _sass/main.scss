@@ -10,23 +10,34 @@
         'layouts/app.scss',
         'layouts/aside.scss';
 
-@import 'components/arrows.scss',
-        'components/rates.scss',
-        'components/auth-form.scss',
-        'components/select.scss',
-        'components/header-coins.scss',
+// Common components
+@import 'components/aside-gift.scss',
         'components/aside-nav.scss',
-        'components/aside-gift.scss',
-        'components/my-profile.scss',
+        'components/loader.scss',
         'components/sex-button.scss',
-        'components/promotion.scss',
-        'components/up-balance.scss',
-        'components/packets-offer.scss',
-        'components/subscribe.scss',
-        'components/accounts.scss',
-        'components/rate-content.scss',
-        'components/invite-promo.scss',
-        'components/invite-bonus.scss',
-        'components/share-block.scss';
+        'components/header-coins.scss';
+
+@import 'components/auth/auth-form.scss',
+        'components/auth/select.scss';
+
+@import 'components/earn/accounts.scss',
+        'components/earn/arrows.scss',
+        'components/earn/invite-promo.scss',
+        'components/earn/rate-content.scss',
+        'components/earn/rates.scss',
+        'components/earn/subscribe.scss';
+
+@import 'components/invite-friends/invite-bonus.scss',
+        'components/invite-friends/share-block.scss';
+
+@import 'components/packets-offer/packets-offer.scss';
+
+@import 'components/profile/my-profile.scss';
+
+@import 'components/promotion/checkbox.scss',
+        'components/promotion/form-order.scss',
+        'components/promotion/promotion.scss';
+
+@import 'components/up-balance/up-balance.scss';
 
 @import 'pages/invite-friends.scss';
