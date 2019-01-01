@@ -10,8 +10,12 @@ if (btn && input) {
     input.addEventListener(event, function() {
       if (checkNumber(this.value) && this.value) {
         btn.disabled = false;
+      } else if (!checkNumber(this.value)) {
+        btn.disabled = true;
+        input.style.borderColor = 'var(--red)';
       } else {
         btn.disabled = true;
+        input.removeAttribute('style');
       }
     });
   });
