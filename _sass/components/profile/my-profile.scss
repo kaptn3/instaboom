@@ -20,5 +20,10 @@
     text-transform: uppercase;
     color: var(--main);
     font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: var(--purple-hover);
+    }
   }
 }
