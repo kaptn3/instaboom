@@ -11,6 +11,10 @@ main {
   padding: 40px 42px 54px 32px;
 }
 
+.promotion-page {
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
