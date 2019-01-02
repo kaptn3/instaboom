@@ -59,27 +59,9 @@
   }
 
   &__btn {
-    background-color: var(--main);
-    width: 100%;
     max-width: 160px;
     display: inline-block;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    text-transform: uppercase;
     padding: 12px 0;
     margin-top: 32px;
-    transition: .2s background-color;
-    font-weight: 700;
-
-    &_disabled {
-      opacity : .2;
-    }
-
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      background-color: #DD48BB;
-    }
   }
 }

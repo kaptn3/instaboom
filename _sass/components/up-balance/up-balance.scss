@@ -95,24 +95,8 @@
   }
 
   &__btn {
-    border-radius: 8px;
     max-width: 200px;
     width: calc(50% - 10px);
-    background-color: var(--main);
-    transition: .3s background-color;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #fff;
-    padding: 15px;
-
-    &:not([disabled]):hover,
-    &:not([disabled]):focus {
-      background-color: var(--purple-hover);
-    }
-
-    &[disabled] {
-      opacity: .2;
-    }
   }
 }
 

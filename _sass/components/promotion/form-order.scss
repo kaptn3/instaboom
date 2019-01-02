@@ -27,23 +27,7 @@
   }
 
   &__btn {
-    border-radius: 8px;
-    background-color: var(--main);
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 100%;
-    padding: 15px;
     margin-top: 32px;
-    
-    &:not([disabled]):hover,
-    &:not([disabled]):focus {
-      background: var(--purple-hover);
-    }
-
-    &:disabled {
-      opacity: .5;
-    }
   }
 
   &__input {

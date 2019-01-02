@@ -73,17 +73,13 @@
 
   &__btn-watch {
     margin-top: 6px;
-    text-transform: uppercase;
-    background-color: #F7F8FD;
-    font-weight: 700;
     padding: 15px 40px;
     display: block;
-    color: var(--main);
-    border-radius: 8px;
-    transition: .3s color, .3s color;
+    width: initial;
 
     &:focus,
     &:hover {
+      background-color: #F7F8FD;
       color: var(--purple-hover);
     }
   }

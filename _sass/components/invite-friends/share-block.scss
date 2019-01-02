@@ -16,16 +16,13 @@
   }
 
   &__copy-btn {
-    text-transform: uppercase;
-    color: var(--main);
-    transition: .3s color;
-    background-color: transparent;
     padding: 15px 22px;
-    font-weight: 700;
+    width: initial;
     flex-shrink: 0;
 
     &:hover,
     &:focus {
+      background-color: transparent;
       color: var(--purple-hover);
     }
   }
