@@ -79,5 +79,9 @@
     &_ordered {
       color: var(--warn);
     }
+
+    &_done {
+      color: var(--green);
+    }
   }
 }
