@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #808080;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>likes</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g>
+        <rect class="cls-1" width="16" height="16"/>
+        <path class="cls-2" d="M13.89,3.07a3.66,3.66,0,0,0-5.18,0h0L8,3.78l-.71-.71A3.67,3.67,0,1,0,2.11,8.26l.7.71L8,14.15,13.19,9l.7-.71a3.66,3.66,0,0,0,0-5.19Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

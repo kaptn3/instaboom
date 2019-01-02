@@ -1,0 +1,81 @@
+.account-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 32px;
+
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 290px;
+  }
+
+  &__social-actions {
+    display: flex;
+    color: #808080;
+    padding: 16px;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 34px;
+    }
+  }
+
+  &__like::before,
+  &__comment::before,
+  &__warn::before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  &__like::before {
+    background: url(../icons/likes.svg) no-repeat center;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__comment::before {
+    background: url(../icons/comments.svg) no-repeat center;
+    width: 13px;
+    height: 13px;
+  }
+
+  &__warn::before {
+    background: url(../icons/warn.svg) no-repeat center;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__progress {
+    font-size: 14px;
+    padding: 0 16px 20px 16px;
+
+    &_done {
+      &::before {
+        content: '';
+        background: url(../icons/done.svg) no-repeat center;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: text-top;
+        margin-right: 5px;
+      }
+    }
+
+    &_promo {
+      text-transform: uppercase;
+      color: var(--main);
+      cursor: pointer;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        color: var(--purple-hover);
+      }
+    }
+  }
+}
