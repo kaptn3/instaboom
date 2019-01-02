@@ -15,7 +15,8 @@
         'components/aside-nav.scss',
         'components/loader.scss',
         'components/sex-button.scss',
-        'components/header-coins.scss';
+        'components/header-coins.scss',
+        'components/tooltip.scss';
 
 @import 'components/auth/auth-form.scss',
         'components/auth/select.scss';
@@ -36,7 +37,9 @@
 
 @import 'components/promotion/checkbox.scss',
         'components/promotion/form-order.scss',
-        'components/promotion/promotion.scss';
+        'components/promotion/promotion.scss',
+        'components/promotion/account-info.scss',
+        'components/promotion/account-score.scss';
 
 @import 'components/up-balance/up-balance.scss';
 

@@ -1,0 +1,54 @@
+.account-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+  border-bottom: 4px solid var(--grey);
+
+  &__counts {
+    display: flex;
+  }
+
+  &__count {
+    margin-right: 40px;
+  }
+
+  &__value {
+    display: block;
+    font-size: 21px;
+    font-weight: 900;
+  }
+
+  &__add {
+
+  }
+
+  &__btn {
+    width: 325px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--main);
+    transition: .3s background-color;
+    border-radius: 8px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      background: var(--purple-hover);
+    }
+  }
+
+  &__in-progress {
+    line-height: 0;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    top: 14px;
+    left: 18px;
+
+    b {
+      font-weight: 900;
+    }
+  }
+}
