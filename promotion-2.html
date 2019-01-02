@@ -45,7 +45,6 @@ scripts: tooltip-add-remove
     </div>
   </div>
   <section class="account-content">
-    {% for i in (1..2) %}
     <div class="account-content__item">
       <img src="https://placehold.it/290x290" alt="Photo">
       <div class="account-content__social-actions">
@@ -57,7 +56,17 @@ scripts: tooltip-add-remove
         Завершено
       </div>
     </div>
-    {% endfor %}
+    <div class="account-content__item">
+      <img src="https://placehold.it/290x290" alt="Photo">
+      <div class="account-content__social-actions">
+        <span class="account-content__like">1000</span>
+        <span class="account-content__comment">1000</span>
+        <span class="account-content__warn">1000</span>
+      </div>
+      <div class="account-content__progress account-content__progress_done">
+        Завершено
+      </div>
+    </div>
     <div class="account-content__item">
       <img src="https://placehold.it/290x290" alt="Photo">
       <div class="account-content__social-actions">
