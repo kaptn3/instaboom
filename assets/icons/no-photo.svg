@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #8b8d96;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <title>no-photo</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g class="cls-1">
+        <rect class="cls-2" x="4" y="4" width="120" height="120" rx="13.33" ry="13.33"/>
+        <circle class="cls-2" cx="40.67" cy="40.67" r="10"/>
+        <polyline class="cls-2" points="124 84 90.67 50.67 17.33 124"/>
+      </g>
+    </g>
+  </g>
+</svg>

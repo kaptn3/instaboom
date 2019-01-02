@@ -78,4 +78,16 @@
       }
     }
   }
+
+  &__no-photo {
+    margin: 82px auto;
+    text-align: center;
+    font-size: 21px;
+    color: #8B8E99;
+
+    &-text {
+      display: block;
+      margin-top: 22px;
+    }
+  }
 }
