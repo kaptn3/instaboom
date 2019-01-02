@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Раскрутка
-scripts: tooltip-add-remove
+scripts: [tooltip-add-remove, total-tooltip, form-order]
 ---
 
 <main>
@@ -46,47 +46,56 @@ scripts: tooltip-add-remove
   </div>
   <section class="account-content">
     <div class="account-content__item">
-      <img src="https://placehold.it/290x290" alt="Photo">
-      <div class="account-content__social-actions">
-        <span class="account-content__like">1000</span>
-        <span class="account-content__comment">1000</span>
-        <span class="account-content__warn">1000</span>
+      <div>
+        <img src="https://placehold.it/290x290" alt="Photo">
+        <div class="account-content__social-actions">
+          <span class="account-content__like">1000</span>
+          <span class="account-content__comment">1000</span>
+          <span class="account-content__warn">1000</span>
+        </div>
+        <div class="account-content__progress account-content__progress_done">
+          Завершено
+        </div>
       </div>
-      <div class="account-content__progress account-content__progress_done">
-        Завершено
+      {% include total-tooltip.html %}
+    </div>
+    <div class="account-content__item">
+      <div>
+        <img src="https://placehold.it/290x290" alt="Photo">
+        <div class="account-content__social-actions">
+          <span class="account-content__like">1000</span>
+          <span class="account-content__comment">1000</span>
+          <span class="account-content__warn">1000</span>
+        </div>
+        <div class="account-content__progress account-content__progress_done">
+          Завершено
+        </div>
       </div>
     </div>
     <div class="account-content__item">
-      <img src="https://placehold.it/290x290" alt="Photo">
-      <div class="account-content__social-actions">
-        <span class="account-content__like">1000</span>
-        <span class="account-content__comment">1000</span>
-        <span class="account-content__warn">1000</span>
-      </div>
-      <div class="account-content__progress account-content__progress_done">
-        Завершено
-      </div>
-    </div>
-    <div class="account-content__item">
-      <img src="https://placehold.it/290x290" alt="Photo">
-      <div class="account-content__social-actions">
-        <span class="account-content__like">1000</span>
-        <span class="account-content__comment">1000</span>
-        <span class="account-content__warn">1000</span>
-      </div>
-      <div class="account-content__progress account-content__progress_promo">
-        Раскрутить
+      <div>
+        <img src="https://placehold.it/290x290" alt="Photo">
+        <div class="account-content__social-actions">
+          <span class="account-content__like">1000</span>
+          <span class="account-content__comment">1000</span>
+          <span class="account-content__warn">1000</span>
+        </div>
+        <div class="account-content__progress account-content__progress_promo">
+          Раскрутить
+        </div>
       </div>
     </div>
     <div class="account-content__item">
-      <img src="https://placehold.it/290x290" alt="Photo">
-      <div class="account-content__social-actions">
-        <span class="account-content__like">1000</span>
-        <span class="account-content__comment">1000</span>
-        <span class="account-content__warn">1000</span>
-      </div>
-      <div class="account-content__progress">
-        В процессе
+      <div>
+        <img src="https://placehold.it/290x290" alt="Photo">
+        <div class="account-content__social-actions">
+          <span class="account-content__like">1000</span>
+          <span class="account-content__comment">1000</span>
+          <span class="account-content__warn">1000</span>
+        </div>
+        <div class="account-content__progress">
+          В процессе
+        </div>
       </div>
     </div>
   </section>
