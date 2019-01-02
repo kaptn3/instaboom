@@ -13,11 +13,17 @@ input {
         display: inline-block;
         vertical-align: middle;
         border: 1px solid #F5F5F8;
+        transition: .3s border-color;
         border-radius: 8px;
         width: 32px;
         height: 32px;
         margin-right: 10px;
         background-color: var(--grey);
+      }
+
+      &:hover::before,
+      &:hover::before {
+        border-color: var(--main);
       }
     }
 
