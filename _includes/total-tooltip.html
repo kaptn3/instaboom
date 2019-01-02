@@ -31,6 +31,10 @@
         </div>
       </div>
     </div>
+    {% if include.type == 'video' %}
+    {% include form-for-video.html %}
+    {% else %}
     {% include form.html %}
+    {% endif %}
   </div>
   </div>

@@ -13,6 +13,10 @@
     width: 290px;
     transition: .3s box-shadow;
 
+    &>div:first-child {
+      position: relative;
+    }
+
     &:hover,
     &:focus {
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
@@ -96,5 +100,18 @@
       display: block;
       margin-top: 22px;
     }
+  }
+
+  &__video-icon {
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    background: #fff url(../icons/video.svg) no-repeat center scroll;
+    background-size: 18px;
+    box-shadow: 0 1px 1px 1px rgba($color: #000, $alpha: .2);
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    z-index: 32;
   }
 }
