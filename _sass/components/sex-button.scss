@@ -3,34 +3,35 @@
 }
 
 .sex-button {
-  border: 1px solid #EBECF2;
-  border-right-width: 0;
-  padding: 14px 38px;
-  transition: .3s color;
-  font-weight: 700;
+  &__checkbox {
+    display: none;
 
-  &:first-child {
-    border-radius: 6px 0 0 6px;
+    &:checked+.sex-button__label {
+      background-color: #37353d;
+      border-color: #37353d;
+      color: #fff;
+    }
   }
 
-  &:last-child {
-    border-radius: 0 6px 6px 0;
-    border-right-width: 1px;
-  }
+  &__label {
+    border: 1px solid #EBECF2;
+    border-right-width: 0;
+    padding: 14px 38px;
+    transition: .3s color;
+    cursor: pointer;
 
-  &:hover,
-  &:focus {
-    color: var(--purple-hover);
-  }
+    &:first-of-type {
+      border-radius: 6px 0 0 6px;
+    }
 
-  &_selected {
-    background-color: #37353d;
-    border-color: #37353d;
-    color: #fff;
+    &:last-of-type {
+      border-radius: 0 6px 6px 0;
+      border-right-width: 1px;
+    }
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: var(--purple-hover);
     }
   }
 }
