@@ -13,7 +13,7 @@ mobileBar.addEventListener('click', function(e) {
 });
 
 document.addEventListener('click', function(e) {
-  if (!mobileSidebar.contains(e.target) && !(mobileBar.contains(e.target))) {
+  if (!mobileSidebar.contains(e.target) && !(mobileBar.contains(e.target)) && mobileSidebar.hasAttribute('style')) {
     mobileSidebar.removeAttribute('style');
     app.removeChild(overlay);
   }
