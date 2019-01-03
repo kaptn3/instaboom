@@ -77,7 +77,7 @@ function autocomplete(inp, arr) {
   });
 }
 
-fetch('https://raw.githubusercontent.com/kaptn3/instaboom/master/js/generated.json')
+fetch('assets/js/generated.json')
   .then(function (response) {
     return response.json();
   })
