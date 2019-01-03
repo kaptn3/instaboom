@@ -26,3 +26,9 @@ main {
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 26px 22px 32px 22px;
+  }
+}

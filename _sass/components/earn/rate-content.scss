@@ -56,6 +56,10 @@
     font-size: 14px;
     padding: 6px 18px;
     margin-left: 16px;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__tooltip {
@@ -66,13 +70,14 @@
       bottom: 35px;
       left: initial;
       right: 0;
-      transform: translateX(38px);
+      transform: translateX(26px);
       width: 240px;
     }
 
     &-arrow {
       left: initial;
       right: 0;
+      transform: translateX(-12px);
     }
   }
 
@@ -116,6 +121,62 @@
     &:hover {
       background-color: #F7F8FD;
       color: var(--purple-hover);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rate-content {
+    &__reward,
+    &__arrows {
+      display: none;
+    }
+
+    &__reward {
+      &_mobile {
+        display: inline-block;
+        margin-left: 0;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__wrapper {
+      margin-right: -22px;
+      margin-left: -22px;
+      padding: 0 22px;
+    }
+
+    &__accounts {
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+      border: none;
+      padding: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    &__video-icon {
+      top: 50px;
+      right: 12px;
+    }
+
+    &__tooltip {
+      margin-right: 15px;
+
+      &-wrapper {
+        transform: translateX(15px);
+      }
+
+      &-arrow {
+        transform: translateX(-2px);
+      }
     }
   }
 }

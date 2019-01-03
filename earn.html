@@ -54,6 +54,8 @@ scripts: [tooltip, tooltip-bar, like, carousel]
       <div class="rate-content__accounts">
         <div class="rate-content__item">
           <div class="rate-content__video-icon"></div><!-- если видео -->
+          <span class="rate-content__reward rate-content__reward_mobile">+5 монет за просмотр</span>
+
           <img src="https://placehold.it/480x480" alt="" width="480" height="480">
           <div class="rate-content__actions">
             <button class="btn rate-content__btn-watch">Смотреть видео</button>
@@ -62,6 +64,7 @@ scripts: [tooltip, tooltip-bar, like, carousel]
         </div>
         {% for i in (1..4) %}
         <div class="rate-content__item">
+          <span class="rate-content__reward rate-content__reward_mobile">+5 монет за лайк</span>
           <img src="https://placehold.it/480x480" alt="" width="480" height="480">
           <div class="rate-content__actions">
             <div class="rate-content__rates rates">

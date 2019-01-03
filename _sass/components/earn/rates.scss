@@ -2,8 +2,8 @@
   &__reward-like {
     position: absolute;
     bottom: 100%;
-    left: 10px;
     width: 100px;
+    left: 10px;
     background-color: #FFAF47;
     border-radius: 20px;
     font-weight: 700;
@@ -42,6 +42,15 @@
       &:focus {
         background-image: url(../icons/hover/dislike.svg);
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rates {
+    &__reward-like {
+      margin-left: 0;
+      left: 0;
     }
   }
 }
