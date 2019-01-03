@@ -58,8 +58,25 @@
     margin-left: 16px;
   }
 
-  &__bar {
+  &__tooltip {
+    display: block;
     margin-left: auto;
+
+    &-wrapper {
+      bottom: 35px;
+      left: initial;
+      right: 0;
+      transform: translateX(38px);
+      width: 240px;
+    }
+
+    &-arrow {
+      left: initial;
+      right: 0;
+    }
+  }
+
+  &__bar {
     background: url(../icons/bar.svg) no-repeat scroll center;
     width: 24px;
     height: 24px;
@@ -68,6 +85,24 @@
     &:hover,
     &:focus {
       background-image: url(../icons/hover/bar.svg);
+    }
+  }
+
+  &__subscribe-actions {
+    list-style: none;
+    margin: 0;
+    padding: 10px 24px;
+    line-height: 50px;
+  }
+
+  &__subscribe-action {
+    cursor: pointer;
+    color: var(--main);
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: var(--purple-hover);
     }
   }
 

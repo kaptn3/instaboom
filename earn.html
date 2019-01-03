@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Заработать монеты
-scripts: [like, carousel]
+scripts: [tooltip, tooltip-bar, like, carousel]
 ---
 <main>
   <h2 class="h1 main__header">Заработать монеты</h2>
@@ -69,7 +69,16 @@ scripts: [like, carousel]
               <button class="rates__item rates__item_dislike" title="Сюда"></button>
             </div>
             <span class="rate-content__reward">+5 монет за лайк</span>
-            <button class="rate-content__bar" title="Подписаться/Пожаловаться"></button>
+            <span class="tooltip rate-content__tooltip">
+              <button class="rate-content__bar" title="Подписаться/Пожаловаться"></button>
+              <div class="tooltip__container tooltip-top rate-content__tooltip-wrapper">
+                <i class="tooltip__arrow rate-content__tooltip-arrow"></i>
+                <ul class="rate-content__subscribe-actions">
+                  <li class="rate-content__subscribe-action">Подписаться</li>
+                  <li class="rate-content__subscribe-action">Пожаловаться</li>
+                </ul>
+              </div>
+            </span>
           </div>
         </div>
         {% endfor %}
