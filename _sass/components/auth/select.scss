@@ -39,16 +39,19 @@
     }
   }
 
-  &__list {
+  &__wrapper {
     position: absolute;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
-    max-height: 324px;
-    overflow-y: auto;
     border-radius: 8px;
     z-index: 99;
-    top: 100%;
+    top: 62px;
     left: 0;
     right: 0;
+  }
+
+  &__list {
+    overflow-y: auto;
+    max-height: 324px;
   }
 
   &__item {
@@ -107,6 +110,13 @@
 
     &_error {
       border-color: var(--red);
+    }
+  }
+
+  &__arrow {
+    bottom: 100%;
+    &::after {
+      top: 100%;
     }
   }
 }

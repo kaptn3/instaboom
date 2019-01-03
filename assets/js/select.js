@@ -9,23 +9,31 @@ function autocomplete(inp, arr) {
 
   inp.addEventListener("input", function (e) {
     if (this.value) {
-      clearBtn.style.display = 'block';
+      clearBtn.style.display = 'block'; // включение кнопки стереть
     } else {
       return false;
     }
 
-    var divList, divItem, i, val = this.value;
-    closeAllLists();
-  
-    divList = document.createElement("div");
-    divList.setAttribute("id", "select-list-" + this.id);
-    divList.classList.add("select__list");
-    this.parentNode.appendChild(divList);
+    let divItem;
+    let val = this.value;
+    closeAllLists(); // закрытые списка при ненахождении логина
 
-    for (i = 0; i < arr.length; i++) {
+    let arrow = document.createElement('i');
+    arrow.className = 'tooltip__arrow select__arrow';
+
+    let divWrap = document.createElement("div");
+    divWrap.className = 'select__wrapper';
+  
+    let divList = document.createElement("div");
+    divList.className = "select__list";
+    this.parentNode.appendChild(divWrap);
+
+    divWrap.appendChild(divList);
+
+    for (let i = 0; i < arr.length; i++) {
       if (arr[i].name.substr(0, val.length).toUpperCase() == val.toUpperCase()) {
         divItem = document.createElement("div");
-        divItem.classList.add('select__item');
+        divItem.className = 'select__item';
         divItem.innerHTML = `<img class="select__item-img" src="${arr[i].picture}" alt="${arr[i].name}">`;
         divItem.innerHTML += `<div><span class="select__item-name">${arr[i].name}</span><span class="select__item-desc">${arr[i].greeting}</span></div>`;
 
@@ -36,19 +44,20 @@ function autocomplete(inp, arr) {
           inp.value = login.textContent; // добавляет логин instagram в скрытый input
 
           let divInput = document.createElement('div');
-          divInput.classList.add('select__item-text')
+          divInput.className = 'select__item-text';
 
           divInput.appendChild(login);
           divInput.appendChild(desc);
 
           image.setAttribute('src', this.getElementsByTagName('img')[0].getAttribute('src'));
-          image.classList.add('select__img_item');
+          image.className = 'select__img_item';
 
           document.querySelector('.select').insertBefore(divInput, clearBtn);
 
           closeAllLists();
         });
         divList.appendChild(divItem);
+        divWrap.appendChild(arrow);
       }
     }
   });
@@ -65,7 +74,7 @@ function autocomplete(inp, arr) {
   }
 
   function closeAllLists(elmnt) {
-    var selectList = document.getElementsByClassName("select__list");
+    var selectList = document.getElementsByClassName("select__wrapper");
     for (var i = 0; i < selectList.length; i++) {
       if (elmnt != selectList[i] && elmnt != inp) {
         selectList[i].parentNode.removeChild(selectList[i]);
@@ -77,10 +86,11 @@ function autocomplete(inp, arr) {
   });
 }
 
+// список логинов
 fetch('assets/js/generated.json')
   .then(function (response) {
     return response.json();
   })
-  .then(function (json) {// добавить иф и к каждому id  сделать разную обработку на клик функцию
+  .then(function (json) {
     autocomplete(document.getElementById("loginInput"), json);
   });
