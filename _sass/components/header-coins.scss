@@ -6,11 +6,13 @@
   &__icon {
     margin-right: 15px;
   }
+
   &__value {
     color: #fff;
     display: block;
     font-weight: 700;
   }
+
   &__up {
     color: #fff;
     opacity: .5;
@@ -19,6 +21,24 @@
     &:hover,
     &:focus {
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__coins {
+    align-items: center;
+  }
+
+  .coins {
+    &__icon {
+      width: 18px;
+      margin-right: 8px;
+    }
+
+    &__value > span,
+    &__up {
+      display: none;
     }
   }
 }

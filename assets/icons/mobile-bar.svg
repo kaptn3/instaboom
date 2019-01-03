@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+    <symbol id="ic_menu_" data-name="ic_menu_" viewBox="0 0 24 24">
+      <g>
+        <line class="cls-1" x1="3" y1="12" x2="21" y2="12"/>
+        <line class="cls-1" x1="3" y1="6" x2="21" y2="6"/>
+        <line class="cls-1" x1="3" y1="18" x2="21" y2="18"/>
+      </g>
+      <rect class="cls-2" width="24" height="24"/>
+    </symbol>
+  </defs>
+  <title>mobile-bar</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <use id="ic_menu_3" data-name="ic_menu_" width="24" height="24" xlink:href="#ic_menu_"/>
+    </g>
+  </g>
+</svg>
