@@ -18,7 +18,7 @@
     font-size: 21px;
     font-weight: 900;
   }
-
+  
   &__btn {
     width: 325px;
   }
@@ -34,5 +34,10 @@
     b {
       font-weight: 900;
     }
+  }
+
+  &__tooltip-wrap.total-tooltip__wrapper {
+    display: block;
+    padding-left: 35px;
   }
 }

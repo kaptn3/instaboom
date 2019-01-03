@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Раскрутка
-scripts: [tooltip-add-remove, total-tooltip, form-order]
+scripts: [tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-add-subscribe]
 ---
 
 <main class="promotion-page">
@@ -40,14 +40,17 @@ scripts: [tooltip-add-remove, total-tooltip, form-order]
       </div>
     </div>
     <div class="account-score__add">
-      <button class="account-score__btn">Добавить подписчиков
-        <div class="total-tooltip">
+      <span>
+        <button  class="btn btn_purple account-score__btn">Добавить подписчиков</button>
+        <div class="total-tooltip account-score__tooltip">
           <i class="total-tooltip__arrow"></i>
-          <div class="total-tooltip__wrapper">
-            text
+          <div class="total-tooltip__wrapper account-score__tooltip-wrap">
+            <i class="total-tooltip__close"></i>
+            <h3 class="h2">Добавить новых подписчиков</h3>
+            {% include add-subscribe.html %}
           </div>
         </div>
-      </button>
+      </span>
       <span class="account-score__in-progress">В процессе добавлено <b>5 из 100</b></span>
     </div>
   </div>

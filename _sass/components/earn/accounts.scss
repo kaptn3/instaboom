@@ -45,6 +45,7 @@
   }
 
   &__close {
+    background-color: transparent;
     background-image: url(../icons/close.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -68,18 +69,11 @@
 
   &__btn {
     margin-top: auto;
-    text-transform: uppercase;
-    background-color: #F7F8FD;
-    border-radius: 8px;
-    padding: 16px;
-    font-weight: 700;
-    width: 100%;
-    color: var(--main);
-    transition: .4s color;
 
     &:hover,
     &:focus {
       color: var(--purple-hover);
+      background-color: #F7F8FD;
     }
   }
 }
