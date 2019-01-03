@@ -13,10 +13,8 @@ const showTooltip = (btn, tooltip, closeClass) => {
   });
 
   document.addEventListener('click', function(e) {
-    console.log(tooltip, tooltip.contains(e.target));
-
     if(!tooltip.parentNode.contains(e.target) && tooltip.hasAttribute('style')) {
       tooltip.removeAttribute('style');
     }
-  })
+  });
 }
