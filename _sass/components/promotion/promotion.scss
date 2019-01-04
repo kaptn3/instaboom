@@ -18,3 +18,16 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 768px) {
+  .promotion-div {
+    border: none;
+    text-align: left;
+
+    &__text {
+      br {
+        display: none;
+      }
+    }
+  }
+}

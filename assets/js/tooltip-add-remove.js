@@ -11,6 +11,10 @@ heading.addEventListener('click', function () {
   } else {
     arrow.classList.add(className);
     tooltip.style.display = 'block';
-    tooltipArrow.style.left = `${heading.clientWidth - 7}px`;
+    if (document.body.clientWidth < 768) {
+      tooltipArrow.style.left = `${heading.clientWidth + 76}px`;
+    } else {
+      tooltipArrow.style.left = `${heading.clientWidth - 7}px`;
+    }
   }
 });

@@ -46,7 +46,6 @@
     top: 40px;
     left: 0;
     padding: 0 21px 6px 21px;
-    width: 426px;
 
     .tooltip__arrow {
       bottom: 100%;
@@ -69,4 +68,8 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+
 }

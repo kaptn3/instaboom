@@ -38,11 +38,10 @@
     padding: 0;
     font-size: 16px;
     font-weight: 700;
-    line-height: 50px;
   }
 
   &__action {
-    padding-left: 44px;
+    padding: 15px 0 15px 44px;
 
     &_add {
       background: url(../icons/add.svg) no-repeat 0 50%;
@@ -66,6 +65,53 @@
       &:focus {
         color: var(--purple-hover);
       }
+    }
+
+    &-more {
+      display: none;
+    }
+  }
+
+  &__tooltip {
+    width: 426px;
+  }
+}
+
+@media (max-width: 768px) {
+  .account-info {
+    border-bottom-width: 2px;
+    padding-bottom: 28px;
+
+    &__photo {
+      width: 72px;
+      height: 72px;
+      margin-right: 12px;
+    }
+
+    &__username {
+      font-size: 16px;
+      text-transform: initial;
+      margin-bottom: 20px;
+      position: initial;
+    }
+
+    &__desc {
+      font-size: 14px;
+      height: 21px;
+      overflow: hidden;
+
+      &-more {
+        display: inline;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: .5;
+      }
+    }
+
+    &__tooltip {
+      width: calc(100% - 44px);
+      top: initial;
+      margin: 20px 22px;
     }
   }
 }

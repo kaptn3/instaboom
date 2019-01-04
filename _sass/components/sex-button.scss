@@ -14,9 +14,11 @@
   }
 
   &__label {
+    width: 95px;
+    text-align: center;
     border: 1px solid #EBECF2;
     border-right-width: 0;
-    padding: 14px 38px;
+    padding: 14px 0;
     transition: .3s color;
     cursor: pointer;
 
@@ -32,6 +34,14 @@
     &:hover,
     &:focus {
       color: var(--purple-hover);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sex-button {
+    &__label {
+      width: 100%;
     }
   }
 }

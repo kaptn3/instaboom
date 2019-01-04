@@ -8,7 +8,7 @@
     width: 100%;
     left: 0;
     z-index: 99;
-    margin-top: 32px;
+    margin-top: 36px;
     border-top: 2px solid #DAE0F5;
     border-bottom: 2px solid #DAE0F5;
     display: flex;
@@ -32,9 +32,9 @@
     height: 25px;
     position: absolute;
     z-index: 900;
-    transform: translateX(-50%);
+    right: 220px;
     overflow: hidden;
-    transform: translate(250%, 9px);
+    transform: translate(50%, 52%);
 
     &::after {
       content: "";
@@ -83,6 +83,22 @@
 
     &_done {
       color: var(--green);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .total-tooltip {
+    &__wrapper {
+      padding: 25px 22px;
+    }
+
+    &__close {
+      right: 22px;
+    }
+
+    &__arrow {
+      right: 50%;
     }
   }
 }

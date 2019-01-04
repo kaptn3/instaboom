@@ -15,7 +15,7 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     <div class="account-info__content">
       <h3 class="h2 account-info__username tooltip">rakamafit
         <i class="account-info__arrow "></i>
-        <div class="tooltip__container tooltip-bottom">
+        <div class="tooltip__container tooltip-bottom account-info__tooltip">
           <i class="tooltip__arrow"></i>
           <ul class="account-info__actions">
             <li class="account-info__action account-info__action_add">Добавить аккаунт</li>
@@ -28,12 +28,13 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
         <p>Officia nihil natus ipsam blanditiis eum. Ipsa architecto accusantium non illo, veritatis consectetur natus</p>
         <p>id aliquam nesciunt facilis cumque, autem iusto<br><a href="#">reiciendis</a></p>
       </div>
+      <span class="account-info__desc-more">Развернуть описание</span>
     </div>
   </div>
   <div class="account-score">
     <div class="account-score__counts">
       <div class="account-score__count">
-        <span class="account-score__value">1634</span> подписчиков
+        <span class="account-score__value">1634</span> подписок
       </div>
       <div class="account-score__count">
         <span class="account-score__value">1634</span> подписчиков
@@ -57,10 +58,11 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
       <span class="account-score__in-progress">В процессе добавлено <b>5 из 100</b></span>
     </div>
   </div>
+  <!-- Контент -->
   <section class="account-content">
     <div class="account-content__item">
       <div>
-        <img src="https://placehold.it/290x290" alt="Photo">
+        <img class="account-content__photo" src="https://placehold.it/290x290" alt="Photo">
         <div class="account-content__social-actions">
           <span class="account-content__like">1000</span>
           <span class="account-content__comment">1000</span>
@@ -74,7 +76,7 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     </div>
     <div class="account-content__item">
       <div>
-        <img src="https://placehold.it/290x290" alt="Photo">
+        <img class="account-content__photo" src="https://placehold.it/290x290" alt="Photo">
         <div class="account-content__social-actions">
           <span class="account-content__like">1000</span>
           <span class="account-content__comment">1000</span>
@@ -88,7 +90,7 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     <div class="account-content__item">
       <div>
         <i class="account-content__video-icon"></i>
-        <img src="https://placehold.it/290x290" alt="Photo">
+        <img class="account-content__photo" src="https://placehold.it/290x290" alt="Photo">
         <div class="account-content__social-actions">
           <span class="account-content__like">1000</span>
           <span class="account-content__comment">1000</span>
@@ -102,7 +104,7 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     </div>
     <div class="account-content__item">
       <div>
-        <img src="https://placehold.it/290x290" alt="Photo">
+        <img class="account-content__photo" src="https://placehold.it/290x290" alt="Photo">
         <div class="account-content__social-actions">
           <span class="account-content__like">1000</span>
           <span class="account-content__comment">1000</span>
@@ -115,3 +117,14 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     </div>
   </section>
 </main>
+
+<script>
+const more = document.querySelector('.account-info__desc-more');
+
+if (more) {
+  more.addEventListener('click', function() {
+    document.querySelector('.account-info__desc').style.height = 'auto';
+    more.style.display = 'none';
+  });
+}
+</script>
