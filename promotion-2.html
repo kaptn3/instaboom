@@ -1,12 +1,15 @@
 ---
 layout: page
 title: Раскрутка
-scripts: [tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-subscribe]
+scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-subscribe]
 ---
 
 <main class="promotion-page">
   <h2 class="h1 main__header">Раскрутка</h2>
-
+  <div class="promotion-form">
+    <button class="promotion-form__close"></button>
+    {% include promotion-form.html %}
+  </div>
   <div class="account-info">
     <img src="https://placehold.it/160x160" alt="" class="account-info__photo" width="160" height="160">
     <div class="account-info__content">
@@ -41,7 +44,7 @@ scripts: [tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-subscr
     </div>
     <div class="account-score__add">
       <span>
-        <button  class="btn btn_purple account-score__btn">Добавить подписчиков</button>
+        <button class="btn btn_purple account-score__btn">Добавить подписчиков</button>
         <div class="total-tooltip account-score__tooltip">
           <i class="total-tooltip__arrow"></i>
           <div class="total-tooltip__wrapper account-score__tooltip-wrap">

@@ -1,3 +1,24 @@
 .main__promotion {
   padding-bottom: 350px;
 }
+
+.promotion-form {
+  margin-bottom: 35px;
+  position: relative;
+
+  &__close {
+    background: transparent url(../icons/close.svg) no-repeat center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    transition: .3s background-image;
+
+    &:focus,
+    &:hover {
+      background-image: url(../icons/hover/close.svg);
+    }
+  }
+}
