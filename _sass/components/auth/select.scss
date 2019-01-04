@@ -41,8 +41,8 @@
 
   &__wrapper {
     position: absolute;
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
     z-index: 99;
     top: 62px;
     left: 0;
@@ -52,6 +52,7 @@
   &__list {
     overflow-y: auto;
     max-height: 324px;
+    border-radius: 8px;
   }
 
   &__item {
