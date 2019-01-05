@@ -10,12 +10,16 @@
     width: (100% / 3);
     padding-right: 30px;
     max-width: 320px;
+    cursor: pointer;
 
     &>div {
-      position: relative;
       border: 1px solid #EFEFEF;
       border-radius: 8px;
       transition: .3s box-shadow;
+
+      &:first-of-type {
+        position: relative;
+      }
 
       &:hover,
       &:focus {
