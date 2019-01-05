@@ -8,7 +8,7 @@
     width: 100%;
     left: 0;
     z-index: 99;
-    margin-top: 36px;
+    margin-top: 31px;
     border-top: 2px solid #DAE0F5;
     border-bottom: 2px solid #DAE0F5;
     display: flex;
@@ -32,9 +32,8 @@
     height: 25px;
     position: absolute;
     z-index: 900;
-    right: 220px;
     overflow: hidden;
-    transform: translate(50%, 52%);
+    transform: translateX(250%) translateY(8px); 
 
     &::after {
       content: "";
@@ -95,10 +94,6 @@
 
     &__close {
       right: 22px;
-    }
-
-    &__arrow {
-      right: 50%;
     }
   }
 }
