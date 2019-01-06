@@ -1,15 +1,13 @@
 .add-subscribe-form {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 42px;
 
   &__item {
-    width: 288px;
-    flex-shrink: 0;
-    margin-right: 32px;
+    width: 100%;
+    padding-right: 32px;
 
     &:last-child {
-      margin-right: 0;
+      padding-right: 0;
     }
   }
 
@@ -25,6 +23,7 @@
   &__sex-buttons {
     margin-top: 12px;
     margin-bottom: 52px;
+    width: 100%;
   }
 
   &__cost {
@@ -52,10 +51,12 @@
   .add-subscribe-form {
     margin-top: 21px;
     font-size: 14px;
+    flex-direction: column;
 
     &__item {
       width: 100%;
       margin-bottom: 21px;
+      padding-right: 0;
     }
 
     &__input {
