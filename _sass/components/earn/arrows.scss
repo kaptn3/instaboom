@@ -15,8 +15,7 @@
       background-image: url(../icons/next.svg);
       border-radius: 0 7px 7px 0;
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-image: url(../icons/hover/next.svg);
       }
     }
@@ -26,8 +25,7 @@
       border-radius: 7px 0 0 7px;
       margin-right: 1px;
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-image: url(../icons/hover/prev.svg);
       }
     }
