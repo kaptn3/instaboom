@@ -24,6 +24,12 @@
     top: 12px;
     right: 42px;
     cursor: pointer;
+    transition: .2s background-image;
+
+    &:hover,
+    &:focus {
+      background-image: url(../icons/hover/close.svg);
+    }
   }
 
   &__arrow {
