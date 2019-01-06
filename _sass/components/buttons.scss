@@ -7,19 +7,15 @@
   color: var(--main);
   background-color: var(--grey);
   transition: .3s background-color, .3s color;
+  text-align: center;
 
   &_purple {
     color: #fff;
     background: var(--main);
-
-    &:not([disabled]):hover,
-    &:not([disabled]):focus {
-      background: var(--purple-hover);
-    }
   }
 
-  &:hover,
-  &:focus {
+  &:not([disabled]):hover,
+  &:not([disabled]):focus {
     color: #fff;
     background-color: var(--purple-hover);
   }

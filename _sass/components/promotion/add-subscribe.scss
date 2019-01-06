@@ -40,8 +40,8 @@
     margin-top: 52px;
     text-align: right;
     
-    &:hover,
-    &:focus {
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
       color: var(--purple-hover);
       background: var(--grey);
     }
