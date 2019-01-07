@@ -28,8 +28,7 @@ if (mobileBar && mobileSidebar) {
   window.onscroll = function () {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
     let windowHeight = window.innerHeight;
-    if (scrolled > (646 - windowHeight)) {
-      divGift.style.top = Math.max(286, 286 + (scrolled - (646 - window.innerHeight))) + 'px';
-    }
+    // 286 - высота блока с меню, 646 - высота меню + высота баннера
+    divGift.style.top = Math.max(286, 286 + (scrolled - (646 - windowHeight))) + 'px';
   }
 }
