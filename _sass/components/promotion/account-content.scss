@@ -148,6 +148,15 @@
       border-radius: 8px;
     }
 
+    &__no-photo {
+      font-size: 14px;
+      margin: 28px auto;
+
+      img {
+        width: 58px;
+      }
+    }
+
     &__social-actions {
       display: none;
     }
