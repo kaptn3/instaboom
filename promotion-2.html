@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Раскрутка
-scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-subscribe]
+scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-subscribe, desc-more]
 ---
 
 <main class="promotion-page">
@@ -10,54 +10,8 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     <button class="promotion-form__close"></button>
     {% include promotion-form.html %}
   </div>
-  <div class="account-info">
-    <img src="https://placehold.it/160x160" alt="" class="account-info__photo" width="160" height="160">
-    <div class="account-info__content">
-      <h3 class="h2 account-info__username tooltip"><span>rakamafit</span>
-        <i class="account-info__arrow "></i>
-        <div class="tooltip__container tooltip-bottom account-info__tooltip">
-          <i class="tooltip__arrow"></i>
-          <ul class="account-info__actions">
-            <li class="account-info__action account-info__action_add">Добавить аккаунт</li>
-            <li class="account-info__action account-info__action_remove">Убрать этот аккаунт из списка</li>
-          </ul>
-        </div>
-      </h3>
-      <div class="account-info__desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        <p>Officia nihil natus ipsam blanditiis eum. Ipsa architecto accusantium non illo, veritatis consectetur natus</p>
-        <p>id aliquam nesciunt facilis cumque, autem iusto<br><a href="#">reiciendis</a></p>
-      </div>
-      <span class="account-info__desc-more">Развернуть описание</span>
-    </div>
-  </div>
-  <div class="account-score">
-    <div class="account-score__counts">
-      <div class="account-score__count">
-        <span class="account-score__value">1634</span> подписок
-      </div>
-      <div class="account-score__count">
-        <span class="account-score__value">1634</span> подписчиков
-      </div>
-      <div class="account-score__count">
-        <span class="account-score__value">1634</span> подписчиков
-      </div>
-    </div>
-    <div class="account-score__add">
-      <span>
-        <button class="btn btn_purple account-score__btn">Добавить подписчиков</button>
-        <div class="total-tooltip account-score__tooltip">
-          <i class="total-tooltip__arrow account-score__tooltip-arrow"></i>
-          <div class="total-tooltip__wrapper account-score__tooltip-wrap">
-            <i class="total-tooltip__close"></i>
-            <h3 class="h2">Добавить новых подписчиков</h3>
-            {% include add-subscribe.html %}
-          </div>
-        </div>
-      </span>
-      <span class="account-score__in-progress">В процессе добавлено <b>5 из 100</b></span>
-    </div>
-  </div>
+  {% include account-info.html %}
+  {% include account-score.html done=false %}
   <!-- Контент -->
   <section class="account-content">
     <div class="account-content__item">
@@ -117,14 +71,3 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
     </div>
   </section>
 </main>
-
-<script>
-  const more = document.querySelector('.account-info__desc-more');
-
-  if (more) {
-    more.addEventListener('click', function () {
-      document.querySelector('.account-info__desc').style.height = 'auto';
-      more.style.display = 'none';
-    });
-  }
-</script>

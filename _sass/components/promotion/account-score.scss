@@ -29,10 +29,16 @@
     display: block;
     position: relative;
     top: 14px;
-    left: 18px;
+    text-align: center;
 
     b {
       font-weight: 900;
+    }
+
+    &_done {
+      b {
+        color: var(--green);
+      }
     }
   }
 
@@ -75,8 +81,6 @@
 
     &__in-progress {
       font-size: 12px;
-      text-align: center;
-      left: 0;
     }
 
     &__tooltip-wrap.total-tooltip__wrapper {
