@@ -21,8 +21,8 @@
     width: initial;
     flex-shrink: 0;
 
-    &:hover,
-    &:focus {
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
       background-color: transparent;
       color: var(--purple-hover);
     }
