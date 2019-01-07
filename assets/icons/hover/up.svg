@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="8" viewBox="0 0 14 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #db02ba;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+    <symbol id="caret_lyl" data-name="caret_lyl" viewBox="0 0 14 8">
+      <polyline class="cls-1" points="1 1 7 7 13 1"/>
+    </symbol>
+  </defs>
+  <title>up</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <use id="caret_lyl-3" data-name="caret_lyl" width="14" height="8" transform="matrix(1, 0, 0, -1, 0, 8)" xlink:href="#caret_lyl"/>
+    </g>
+  </g>
+</svg>

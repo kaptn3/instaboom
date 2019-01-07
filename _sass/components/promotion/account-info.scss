@@ -13,6 +13,17 @@
     cursor: pointer;
     margin-bottom: 25px;
     display: inline-block;
+
+    &:hover,
+    &:focus {
+      span {
+        color: var(--purple-hover);
+      }
+
+      .account-info__arrow {
+        background-image: url(../icons/hover/up.svg);
+      }
+    }
   }
 
   &__arrow {

@@ -13,7 +13,7 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
   <div class="account-info">
     <img src="https://placehold.it/160x160" alt="" class="account-info__photo" width="160" height="160">
     <div class="account-info__content">
-      <h3 class="h2 account-info__username tooltip">rakamafit
+      <h3 class="h2 account-info__username tooltip"><span>rakamafit</span>
         <i class="account-info__arrow "></i>
         <div class="tooltip__container tooltip-bottom account-info__tooltip">
           <i class="tooltip__arrow"></i>
@@ -119,12 +119,12 @@ scripts: [select, tooltip, tooltip-add-remove, total-tooltip, form-order, toolti
 </main>
 
 <script>
-const more = document.querySelector('.account-info__desc-more');
+  const more = document.querySelector('.account-info__desc-more');
 
-if (more) {
-  more.addEventListener('click', function() {
-    document.querySelector('.account-info__desc').style.height = 'auto';
-    more.style.display = 'none';
-  });
-}
+  if (more) {
+    more.addEventListener('click', function () {
+      document.querySelector('.account-info__desc').style.height = 'auto';
+      more.style.display = 'none';
+    });
+  }
 </script>
