@@ -3,14 +3,17 @@
   text-align: center;
   background-color: #23242E;
   border-top: 4px solid #4F5366;
+  left: 0;
+  width: 256px;
+  position: absolute;
 }
 
 .gift {
   &__text {
     margin-top: 35px;
     margin-bottom: 35px;
-    font-size : 14px;
-    line-height : 20px;
+    font-size: 14px;
+    line-height: 20px;
     opacity: .75;
   }
 
