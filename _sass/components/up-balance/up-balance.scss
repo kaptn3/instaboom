@@ -15,7 +15,7 @@
 }
 
 .balance {
-  border-color: #F7F8FD;
+  border-color: var(--grey);
   margin-right: 32px;
 
   &__inner {
@@ -24,7 +24,7 @@
 
   &__discount {
     display: flex;
-    background-color: #F7F8FD;
+    background-color: var(--grey);
     padding: 36px 12px 28px 22px;
   }
 
@@ -35,7 +35,6 @@
   &__text {
     max-width: 200px;
     line-height: 20px;
-    letter-spacing: .05em;
   }
 
   &__title {
@@ -45,7 +44,7 @@
 
 .buy-coins {
   border-color: transparent;
-  background-color: #F7F8FD;
+  background-color: var(--grey);
 
   &__title {
     margin-bottom: 32px;
@@ -59,6 +58,7 @@
     width: 50%;
     max-width: 200px;
     font-size: 14px;
+    display: block;
 
     &:first-child {
       margin-right: 16px;
@@ -107,5 +107,57 @@
 
   .balance {
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .balance {
+    &__title {
+      margin-bottom: 18px;
+    }
+
+    &__discount {
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    &__image {
+      height: 40px;
+    }
+  }
+
+  .balance__inner,
+  .buy-coins {
+    border-width: 2px;
+    padding: 18px 14px 18px 14px;
+  }
+
+  .buy-coins {
+    &__title {
+      margin-bottom: 18px;
+    }
+
+    &__input-group {
+      display: block;
+    }
+
+    &__label {
+      width: initial;
+      max-width: initial;
+
+      &:first-child {
+        margin-right: 0;
+        padding-bottom: 20px
+      }
+    }
+
+    &__discount {
+      padding-top: 8px;
+    }
+
+    &__btn {
+      width: 100%;
+      max-width: initial;
+    }
   }
 }
