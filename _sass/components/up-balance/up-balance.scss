@@ -153,6 +153,27 @@
       width: initial;
       max-width: initial;
 
+      .tooltip__container {
+        right: 0;
+        top: 93%;
+        margin-right: 0;
+        width: 100%;
+
+        .tooltip__arrow {
+          bottom: 100%;
+          width: 50px;
+          height: 25px;
+          top: initial;
+          left: 50%;
+          margin-left: -25px;
+
+          &::after {
+            top: 100%;
+            left: 50%;
+          }
+        }
+      }
+
       &:first-child {
         margin-right: 0;
         padding-bottom: 20px
