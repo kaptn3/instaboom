@@ -1,5 +1,4 @@
 const showTooltip = (btn, tooltip, closeClass) => {
-
   if (tooltip && btn) {
     btn.addEventListener('click', function (e) {
       if (!tooltip.hasAttribute('style')) {
@@ -18,5 +17,7 @@ const showTooltip = (btn, tooltip, closeClass) => {
         tooltip.removeAttribute('style');
       }
     });
+  } else if (tooltip && !btn) {
+    tooltip.style.display = 'block';
   }
 }

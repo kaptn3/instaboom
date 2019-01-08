@@ -13,6 +13,12 @@
 
   &__label {
     margin-bottom: 14px;
+
+    .tooltip__container {
+      margin-top: 26px;
+      top: 100%;
+      padding: 16px;
+    }
   }
 
   &__input {
@@ -38,7 +44,7 @@
   &__preview-btn {
     margin-top: 52px;
     text-align: right;
-    
+
     &:not([disabled]):hover,
     &:not([disabled]):focus {
       color: var(--purple-hover);

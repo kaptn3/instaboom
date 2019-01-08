@@ -29,16 +29,16 @@
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
-    
+
     &::after {
-     content: "";
-     position: absolute;
-     width: 16px;
-     height: 16px;
-     background: white;
-     transform: translateX(-50%) translateY(-50%) rotate(45deg);
-     left: 50%;
-     box-shadow: 1px 1px 8px 0px rgba(0,0,0,.2);
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: white;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      left: 50%;
+      box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, .2);
     }
   }
 
@@ -68,8 +68,22 @@
       }
     }
   }
-}
 
-@media (max-width: 768px) {
+  &-left {
+    right: 100%;
 
+    .tooltip__arrow {
+      width: 25px;
+      height: 50px;
+      top: 0;
+      left: 100%;
+      transform: initial;
+
+      &::after {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        left: 0;
+      }
+    }
+  }
 }

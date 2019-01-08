@@ -13,3 +13,10 @@
 
   showTooltip(btn, tooltipContainer, 'tooltip__close');
 }
+
+{
+  const input = document.querySelector('.add-subscribe-form__input');
+  const btn = document.querySelector('.add-subscribe-form__btn');
+
+  checkInput(input, btn);
+}
