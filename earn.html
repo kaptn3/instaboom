@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Заработать монеты
-scripts: [tooltip, tooltip-bar, like, carousel]
+scripts: [tooltip, tooltip-bar, like, carousel, textarea]
 ---
 <main>
   <h2 class="h1 main__header">Заработать монеты</h2>
@@ -59,6 +59,34 @@ scripts: [tooltip, tooltip-bar, like, carousel]
     <div class="rate-content__wrapper">
       <div class="rate-content__accounts">
         <div class="rate-content__item">
+          <span class="rate-content__reward rate-content__reward_mobile">+5 монет за комментарий</span>
+
+          <img src="https://placehold.it/480x480" alt="" width="480" height="480">
+
+          <div class="rate-content__comment">
+            <label for="comment" class="label-comment">
+              Напишите подходящий комментарий<br>
+              (не менее 3 слов)</label>
+            <span class="tooltip rate-content__tooltip">
+              <button class="rate-content__bar" title="Подписаться/Пожаловаться"></button>
+              <div class="tooltip__container tooltip-top rate-content__tooltip-wrapper">
+                <i class="tooltip__arrow rate-content__tooltip-arrow"></i>
+                <ul class="rate-content__subscribe-actions">
+                  <li class="rate-content__subscribe-action">Подписаться</li>
+                  <li class="rate-content__subscribe-action">Пожаловаться</li>
+                </ul>
+              </div>
+            </span>
+
+          </div>
+          <div class="rate-content__comment-form">
+            <textarea name="" id="comment" rows="1" placeholder="Ваш комментарий"></textarea>
+            <button class="rate-content__comment-send"></button>
+          </div>
+          <span class="rate-content__reward rate-content__reward_comment">+5 монет за комментарий</span>
+
+        </div>
+        <div class="rate-content__item">
           <div class="rate-content__video-icon"></div><!-- если видео -->
           <span class="rate-content__reward rate-content__reward_mobile">+5 монет за просмотр</span>
 
@@ -68,7 +96,7 @@ scripts: [tooltip, tooltip-bar, like, carousel]
             <span class="rate-content__reward">+5 монет за просмотр</span>
           </div>
         </div>
-        {% for i in (1..4) %}
+        {% for i in (1..2) %}
         <div class="rate-content__item">
           <span class="rate-content__reward rate-content__reward_mobile">+5 монет за лайк</span>
           <img src="https://placehold.it/480x480" alt="" width="480" height="480">

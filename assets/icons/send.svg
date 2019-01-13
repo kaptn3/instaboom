@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>send</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g>
+        <line class="cls-1" x1="22" y1="2" x2="11" y2="13"/>
+        <polygon class="cls-1" points="22 2 15 22 11 13 2 9 22 2"/>
+        <rect class="cls-2" width="24" height="24"/>
+      </g>
+    </g>
+  </g>
+</svg>
