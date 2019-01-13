@@ -63,5 +63,10 @@
     &__logo {
       display: none;
     }
+
+    &__logo_auth {
+      display: block;
+      margin-left: 0;
+    }
   }
 }
