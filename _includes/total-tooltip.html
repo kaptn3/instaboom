@@ -38,3 +38,46 @@
     {% endif %}
   </div>
 </div>
+
+<!-- Мобильная версия tooltip (здесь модальное окно) -->
+<div class="mobile-tooltip">
+  <header class="mobile-tooltip__header">
+    <i class="mobile-tooltip__back"></i>
+    <span class="mobile-tooltip__coins">10 000</span>
+  </header>
+  <img class="mobile-tooltip__photo" src="https://placehold.it/320x320" alt="Photo" class="tooltip__photo_mobile">
+  <div class="mobile-tooltip__total">
+    <h4 class="mobile-tooltip__heading">Всего у фото</h4>
+    <div class="mobile-tooltip__container">
+      <div class="mobile-tooltip__block">
+        <span>1600</span>
+        лайков
+      </div>
+      <div class="mobile-tooltip__block">
+        <span>1600</span>
+        лайков
+      </div>
+      <div class="mobile-tooltip__block">
+        <span>1600</span>
+        лайков
+      </div>
+    </div>
+
+    <h4 class="mobile-tooltip__heading">Выполнено/заказано</h4>
+    <div class="mobile-tooltip__container">
+      <div class="mobile-tooltip__block mobile-tooltip__block_ordered">
+        <span>15/1000</span>
+        лайков
+      </div>
+      <div class="mobile-tooltip__block mobile-tooltip__block_done">
+        <span>3/3</span>
+        коммент.
+      </div>
+    </div>
+  </div>
+  {% if include.type == 'video' %}
+  {% include form-for-video.html %}
+  {% else %}
+  {% include form.html %}
+  {% endif %}
+</div>

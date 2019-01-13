@@ -123,7 +123,6 @@
     position: absolute;
     top: 7px;
     right: 7px;
-    z-index: 32;
   }
 }
 
@@ -136,6 +135,7 @@
 
       &>div {
         border: none;
+        border-radius: 0;
 
         &:focus,
         &:hover {

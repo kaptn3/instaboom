@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+    <symbol id="caret_white" data-name="caret_white" viewBox="0 0 14 8">
+      <polyline class="cls-1" points="1 1 7 7 13 1"/>
+    </symbol>
+  </defs>
+  <title>back</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g id="_Группа_" data-name="&lt;Группа&gt;">
+        <rect class="cls-2" width="24" height="24"/>
+        <use id="caret_white-3" data-name="caret_white" width="14" height="8" transform="translate(16 4) rotate(90) scale(1.15)" xlink:href="#caret_white"/>
+      </g>
+    </g>
+  </g>
+</svg>
