@@ -14,7 +14,7 @@
   &__label {
     margin-bottom: 14px;
 
-    .tooltip__container {
+    & > .tooltip__container {
       margin-top: 26px;
       top: 100%;
       padding: 16px;
