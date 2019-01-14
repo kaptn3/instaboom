@@ -23,12 +23,20 @@ if (mobileBar && mobileSidebar) {
 
 {
   const divGift = document.querySelector('.aside__gift');
-  divGift.style.top = Math.max(286, 286 + (0 - (646 - window.innerHeight))) + 'px';
+  if (document.body.clientWidth > 768) {
+    divGift.style.top = Math.max(286, 286 + (0 - (646 - window.innerHeight))) + 'px';
+  } else {
+    divGift.style.top = Math.max(286, 286 + (0 - (523 - window.innerHeight))) + 'px';
+  }
 
   window.onscroll = function () {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
     let windowHeight = window.innerHeight;
-    // 286 - высота блока с меню, 646 - высота меню + высота баннера
-    divGift.style.top = Math.max(286, 286 + (scrolled - (646 - windowHeight))) + 'px';
+    if (document.body.clientWidth > 768) {
+      // 286 - высота блока с меню, 646 - высота меню + высота баннера
+      divGift.style.top = Math.max(286, 286 + (scrolled - (646 - windowHeight))) + 'px';
+    } else {
+      divGift.style.top = Math.max(286, 286 + (scrolled - (523 - windowHeight))) + 'px';
+    }
   }
 }

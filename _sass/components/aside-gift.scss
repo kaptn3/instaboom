@@ -6,6 +6,10 @@
   left: 0;
   width: 256px;
   position: absolute;
+
+  img {
+    width: 28px;
+  }
 }
 
 .gift {
@@ -15,6 +19,10 @@
     font-size: 14px;
     line-height: 20px;
     opacity: .75;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__btn {
@@ -32,6 +40,25 @@
     &:hover,
     &:focus {
       background-color: #353844;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aside__gift {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .gift {
+    &__text {
+      display: none;
+      margin-top: 24px;
+      margin-bottom: 24px;
+
+      &_mobile {
+        display: block;
+      }
     }
   }
 }
