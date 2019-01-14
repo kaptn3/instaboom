@@ -10,7 +10,7 @@ html {
   font-family: 'Museo Sans Cyrl', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: .05em;
+  letter-spacing: .05px;
   color : #38343E;
 }
 
@@ -27,6 +27,7 @@ button {
   outline: none;
   border: 0;
   cursor: pointer;
+  letter-spacing: .5px;
 }
 
 a {
