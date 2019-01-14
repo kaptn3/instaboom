@@ -15,7 +15,7 @@ const checkInput = (input, btn, dir) => {
       let div = document.createElement('div');
       div.className = `tooltip__container tooltip-${dir}`;
 
-      div.innerHTML = `<i class="tooltip__arrow"></i>Допустимы только положительные цифры`;
+      div.innerHTML = `<i class="tooltip__arrow"></i>Допустимы только цифры`;
 
       input.parentNode.appendChild(div);
     }
