@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 115px;
+  height: 124px;
   border-bottom: 4px solid var(--grey);
 
   &__counts {
@@ -45,11 +45,12 @@
   &__tooltip-wrap.total-tooltip__wrapper {
     display: block;
     padding-left: 35px;
+    margin-top: 37px;
   }
 
   &__tooltip-arrow.total-tooltip__arrow {
     right: 220px;
-    transform: translateX(50%) translateY(8px);
+    transform: translateX(50%) translateY(14px);
   }
 }
 
