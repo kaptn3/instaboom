@@ -10,6 +10,7 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 3px;
+        fill: #7743ba;
       }
     </style>
     <symbol id="ellipsis" data-name="ellipsis" viewBox="0 0 24 24">
