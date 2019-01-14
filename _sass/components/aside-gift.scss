@@ -6,10 +6,6 @@
   left: 0;
   width: 256px;
   position: absolute;
-
-  img {
-    width: 28px;
-  }
 }
 
 .gift {
@@ -48,8 +44,12 @@
   .aside__gift {
     padding-top: 20px;
     padding-bottom: 20px;
+
+    img {
+      width: 28px;
+    }
   }
-  
+
   .gift {
     &__text {
       display: none;
