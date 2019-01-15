@@ -72,7 +72,8 @@
     }
 
     &__count {
-      margin-right: 18px;
+      margin-right: 0;
+      width: calc(100% / 3);
     }
 
     &__add,
