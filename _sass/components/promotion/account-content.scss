@@ -129,6 +129,9 @@
 @media (max-width: 768px) {
   .account-content {
     margin-right: -10px;
+    border-top: 2px solid var(--grey);
+    padding-top: 22px;
+    margin-top: 6px;
 
     &__item {
       padding-right: 10px;
