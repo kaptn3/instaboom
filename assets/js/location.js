@@ -6,9 +6,12 @@
   const locationList = document.querySelector('.location__list');
   const locationArrow = document.querySelector('.location__arrow');
 
+  /*locationDiv.addEventListener('mouseover', function() {
+    locationArrow.style.backgroundImage = 'url(assets/icons/hover/up.svg)';
+  });*/
+
   locationDiv.addEventListener('click', function () {
     if (locationTooltip.hasAttribute('style')) {
-      locationArrow.classList.remove('location__arrow_opened');
       closeList();
     } else {
       locationTooltip.style.display = 'block';
@@ -35,6 +38,7 @@
 
   const closeList = () => {
     locationTooltip.removeAttribute('style');
+    locationArrow.classList.remove('location__arrow_opened');
   }
 
   initList();
