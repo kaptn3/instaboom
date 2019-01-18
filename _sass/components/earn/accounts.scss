@@ -1,6 +1,7 @@
 .accounts {
   overflow-x: hidden;
   margin-right: -42px;
+  margin-left: -16px;
 
   &__list {
     display: flex;
@@ -19,7 +20,8 @@
     padding: 20px 30px 15px 30px;
     display: flex;
     flex-direction: column;
-    margin-right: 32px;
+    margin-right: 16px;
+    margin-left: 16px;
     transition: .3s box-shadow;
 
     &:last-child {
@@ -28,7 +30,7 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0 5px 15px 2px rgba(0, 0, 0, .2);
+      box-shadow: 0 5px 5px 2px rgba(0, 0, 0, .2);
     }
   }
 

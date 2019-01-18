@@ -13,17 +13,16 @@
     cursor: pointer;
 
     &>div {
-      border: 1px solid #EFEFEF;
-      border-radius: 8px;
-      transition: .3s box-shadow;
-
       &:first-of-type {
         position: relative;
-      }
+        border: 1px solid #EFEFEF;
+        border-radius: 8px;
+        transition: .3s box-shadow;
 
-      &:hover,
-      &:focus {
-        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
+        &:hover,
+        &:focus {
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
+        }
       }
     }
   }
@@ -137,12 +136,14 @@
       padding-right: 10px;
 
       &>div {
-        border: none;
-        border-radius: 0;
+        &:first-of-type {
+          border: none;
+          border-radius: 0;
 
-        &:focus,
-        &:hover {
-          box-shadow: none;
+          &:focus,
+          &:hover {
+            box-shadow: none;
+          }
         }
       }
     }
