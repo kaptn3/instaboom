@@ -1,23 +1,23 @@
 const showTooltip = (btn, tooltip, closeClass) => {
+  const toggleModal = () => {
+    tooltip.classList.toggle('opened');
+  }
+
+  const clickOutside = (e) => {
+    if (!tooltip.parentNode.contains(e.target) && tooltip.classList.contains('opened')) {
+      tooltip.classList.remove('opened');
+    }
+  }
+
   if (tooltip && btn) {
-    btn.addEventListener('click', function (e) {
-      if (!tooltip.hasAttribute('style')) {
-        tooltip.style.display = 'block';
-      }
+    document.addEventListener('click', clickOutside);
 
-      if (closeClass) {
-        tooltip.querySelector(`.${closeClass}`).addEventListener('click', function () {
-          tooltip.removeAttribute('style');
-        });
-      }
-    });
+    btn.addEventListener('click', toggleModal);
 
-    document.addEventListener('click', function (e) {
-      if (!tooltip.parentNode.contains(e.target) && tooltip.hasAttribute('style')) {
-        tooltip.removeAttribute('style');
-      }
-    });
+    if (closeClass) {
+      tooltip.querySelector(`.${closeClass}`).addEventListener('click', toggleModal);
+    }
   } else if (tooltip && !btn) {
-    tooltip.style.display = 'block';
+    toggleModal();
   }
 }

@@ -1,30 +1,28 @@
 const showPhoto = (btn, tooltip, mobileTooltip, closeClass) => {
+  const toggleModal = () => {
+    if (document.documentElement.clientWidth > 768) {
+      tooltip.classList.toggle('opened');
+    } else {
+      mobileTooltip.classList.toggle('opened');
+    }
+  }
+
+  const clickOutside = (e) => {
+    if (!tooltip.parentNode.contains(e.target) && tooltip.classList.contains('opened')) {
+      tooltip.classList.remove('opened');
+    }
+  }
+
   if (tooltip && btn) {
-    btn.addEventListener('click', function () {
-      if (document.documentElement.clientWidth > 768) {
-        if (!tooltip.hasAttribute('style')) {
-          tooltip.style.display = 'block';
-        }
+    btn.addEventListener('click', toggleModal);
 
-        if (closeClass) {
-          tooltip.querySelector(`.${closeClass}`).addEventListener('click', function () {
-            tooltip.removeAttribute('style');
-          });
-        }
-      } else {
-        mobileTooltip.style.display = 'block';
+    if (closeClass) {
+      tooltip.querySelector(`.${closeClass}`).addEventListener('click', toggleModal);
+    }
 
-        mobileTooltip.querySelector('.mobile-tooltip__back').addEventListener('click', function () {
-          mobileTooltip.removeAttribute('style');
-        });
-      }
-    });
+    mobileTooltip.querySelector('.mobile-tooltip__back').addEventListener('click', toggleModal);
 
-    document.addEventListener('click', function (e) {
-      if (!tooltip.parentNode.contains(e.target) && tooltip.hasAttribute('style')) {
-        tooltip.removeAttribute('style');
-      }
-    });
+    document.addEventListener('click', clickOutside);
   }
 }
 
