@@ -2,13 +2,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 26px;
-  
+
   &__photo {
     margin-right: 15px;
     border-radius: 100%;
     width: 48px;
     height: 48px;
   }
+
   &__login {
     display: block;
     font-weight: 900;
@@ -16,6 +17,7 @@
     border-radius: 100%;
     margin-bottom: 12px;
   }
+
   &__logout {
     text-transform: uppercase;
     color: var(--main);
@@ -24,6 +26,15 @@
     &:hover,
     &:focus {
       color: var(--purple-hover);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-profile {
+    &__login {
+      font-size: 14px;
+      margin-bottom: 6px;
     }
   }
 }

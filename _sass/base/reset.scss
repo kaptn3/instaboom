@@ -54,3 +54,9 @@ button:focus,
 textarea:focus {
   outline: none;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}

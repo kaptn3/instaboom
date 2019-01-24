@@ -126,11 +126,14 @@
 
     &__discount {
       padding: 16px;
-      font-size: 14px;
     }
 
     &__image {
       height: 40px;
+    }
+
+    &__inner > span.h2 {
+      font-size: 14px;
     }
   }
 
