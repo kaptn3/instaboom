@@ -35,7 +35,10 @@
       }
 
       &+span::before {
-        background: var(--grey) url(../icons/check.svg) no-repeat center scroll;
+        background-color: var(--grey);
+        background-image: url(../icons/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }
