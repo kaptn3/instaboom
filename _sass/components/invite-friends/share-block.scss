@@ -1,12 +1,15 @@
 .share-block {
   width: 100%;
+  
+  p {
+  line-height: 20px;}
 
   &__link {
     background-color: var(--grey);
     border-radius: 8px;
     padding-left: 20px;
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     border: 1px solid #EBECF1;
   }
 
