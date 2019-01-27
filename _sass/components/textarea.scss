@@ -9,6 +9,6 @@ textarea {
   overflow-y: hidden;
 
   &::-webkit-scrollbar-track {
-    border-left: 1px solid #EAEBF0;
+    border-radius: 0 8px 8px 0;
   }
 }
