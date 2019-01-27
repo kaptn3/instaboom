@@ -29,5 +29,9 @@
         background-image: url(../icons/hover/prev.svg);
       }
     }
+
+    &:disabled {
+      opacity: .25;
+    }
   }
 }

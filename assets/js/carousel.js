@@ -1,4 +1,4 @@
-let carousel = (direction, wrapper, list) => {
+let carousel = (direction, wrapper, list, btns) => {
   const sizeWrap = wrapper.offsetWidth;
   const sizeList = list.offsetWidth;
   let x;
@@ -16,15 +16,21 @@ let carousel = (direction, wrapper, list) => {
       x = Math.max(x - sizeWrap, sizeWrap - sizeList);
     }
   }
-    list.setAttribute('data-left', x);
-    list.style.transform = `translateX(${x}px)`;
+
+  if (btns) {
+    btns[0].disabled = x == 0;
+    btns[1].disabled = x <= sizeWrap - sizeList;
+  }
+
+  list.setAttribute('data-left', x);
+  list.style.transform = `translateX(${x}px)`;
 }
 
 const eventForBtns = (btns, wrapper, list) => {
   for (let i = 0; i < 2; i++) {
     const dir = (i === 0 ? 'left' : 'right');
-    btns[i].addEventListener('click', function() {
-      carousel(dir, wrapper, list);
+    btns[i].addEventListener('click', function () {
+      carousel(dir, wrapper, list, btns);
     });
   }
 }
@@ -34,7 +40,7 @@ const subscribeCarousel = () => {
   const wrapper = document.querySelector('.accounts');
   const list = document.querySelector('.accounts__list');
 
-  eventForBtns(btns, wrapper, list);  
+  eventForBtns(btns, wrapper, list);
 
   var hammertime = new Hammer(list);
   hammertime.on('swipeleft', function () {
@@ -51,7 +57,7 @@ const contentCarousel = () => {
   const wrapper = document.querySelector('.rate-content__wrapper');
   const list = document.querySelector('.rate-content__accounts');
 
-  eventForBtns(btns, wrapper, list);  
+  eventForBtns(btns, wrapper, list);
 
   var hammertime2 = new Hammer(list);
   hammertime2.on('swipeleft', function () {
