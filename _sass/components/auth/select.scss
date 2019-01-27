@@ -54,6 +54,10 @@
     max-height: 324px;
     border-radius: 8px;
     margin: 0 -1px;
+
+    &::-webkit-scrollbar-track {
+      border-radius: 0 8px 8px 0;
+    }
   }
 
   &__item {
@@ -62,6 +66,7 @@
     background-color: #fff;
     display: flex;
     align-items: center;
+    border-right: 1px solid #EAEBF0;
 
     &-name {
       font-size: 16px;
