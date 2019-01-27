@@ -181,11 +181,12 @@
     }
 
     &__accounts {
-      width: 100%;
+      //width: 100%;
     }
 
     &__item {
-      width: 100%;
+      width: calc(100vw - 44px);
+      margin-right: 44px;
       border: none;
       padding: 0;
 
@@ -202,8 +203,6 @@
     }
 
     &__tooltip {
-      margin-left: 15px;
-
       &-wrapper {
         transform: translateX(15px);
       }

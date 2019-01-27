@@ -15,9 +15,9 @@ let carousel = (direction, wrapper, list) => {
     } else {
       x = Math.max(x - sizeWrap, sizeWrap - sizeList);
     }
+  }
     list.setAttribute('data-left', x);
     list.style.transform = `translateX(${x}px)`;
-  }
 }
 
 const eventForBtns = (btns, wrapper, list) => {
@@ -35,6 +35,15 @@ const subscribeCarousel = () => {
   const list = document.querySelector('.accounts__list');
 
   eventForBtns(btns, wrapper, list);  
+
+  var hammertime = new Hammer(list);
+  hammertime.on('swipeleft', function () {
+    carousel('right', wrapper, list);
+  });
+
+  hammertime.on('swiperight', function () {
+    carousel('left', wrapper, list);
+  });
 }
 
 const contentCarousel = () => {
@@ -43,6 +52,15 @@ const contentCarousel = () => {
   const list = document.querySelector('.rate-content__accounts');
 
   eventForBtns(btns, wrapper, list);  
+
+  var hammertime2 = new Hammer(list);
+  hammertime2.on('swipeleft', function () {
+    carousel('right', wrapper, list);
+  });
+
+  hammertime2.on('swiperight', function () {
+    carousel('left', wrapper, list);
+  });
 }
 
 subscribeCarousel();
