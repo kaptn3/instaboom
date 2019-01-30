@@ -9,6 +9,11 @@
           <li class="account-info__action account-info__action_add">Добавить аккаунт</li>
           <li class="account-info__action account-info__action_remove">Убрать этот аккаунт из списка</li>
         </ul>
+        {% for i in (1..9) %}
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        {% endfor %}
       </div>
     </h3>
     <div class="account-info__desc">

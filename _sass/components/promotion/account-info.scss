@@ -9,14 +9,17 @@
   }
 
   &__username {
-    color: var(--main);
     cursor: pointer;
     margin-bottom: 25px;
     display: inline-block;
 
+    &>span {
+      color: var(--main);
+    }
+
     &:hover,
     &:focus {
-      span {
+      &>span {
         color: var(--purple-hover);
       }
 
@@ -46,13 +49,20 @@
   &__actions {
     list-style: none;
     margin: 0;
-    padding: 5px 0;
     font-size: 16px;
     font-weight: 700;
+    padding: 5px 21px 6px 21px;
+    border-bottom: 4px solid var(--grey);
+  }
+
+  &__select-item {
+    padding-left: 17px;
+    padding-right: 17px;
   }
 
   &__action {
     padding: 15px 0 15px 44px;
+    color: var(--main);
 
     &_add {
       background: url(../icons/add.svg) no-repeat 0 50%;
@@ -85,6 +95,9 @@
 
   &__tooltip {
     width: 426px;
+    padding: 0;
+    max-height: 312px;
+    overflow: auto;
   }
 }
 
@@ -127,6 +140,7 @@
 
     &__actions {
       font-size: 14px;
+      border-bottom-width: 2px;
     }
   }
 }
