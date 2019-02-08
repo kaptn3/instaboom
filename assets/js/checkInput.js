@@ -1,43 +1,39 @@
-const checkInput = (input, btn, dir) => {
+function errorDivCreate(input, dir) {
   if (dir === undefined) {
     dir = 'bottom';
   }
-  if (input, btn) {
-    let errorTooltip;
-    const errorRemove = () => {
-      if (input.hasAttribute('style')) {
-        input.removeAttribute('style');
-      }
-      errorTooltip.style.display = 'none';
+  let div = document.createElement('div');
+  div.className = `tooltip__container tooltip-${dir} tooltip__input-error`;
+
+  div.innerHTML = `<i class="tooltip__arrow"></i>Допустимы только цифры`;
+
+  input.parentNode.appendChild(div);
+}
+
+function checkInput(input) {
+  const errorDiv = input.parentNode.querySelector('.tooltip__container');
+
+  if (input.checkValidity()) {
+    if (input.classList.contains('input__error')) {
+      input.classList.remove('input__error');
     }
-
-    const errorDivCreate = () => {
-      let div = document.createElement('div');
-      div.className = `tooltip__container tooltip-${dir}`;
-
-      div.innerHTML = `<i class="tooltip__arrow"></i>Допустимы только цифры`;
-
-      input.parentNode.appendChild(div);
-    }
-
-    if (btn && input) {
-      errorDivCreate();
-      errorTooltip = input.parentNode.querySelector('.tooltip__container');
-      ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function (event) {
-        input.addEventListener(event, function () {
-          if (this.checkValidity() && this.value) {
-            btn.disabled = false;
-            errorRemove();
-          } else if (!this.checkValidity()) {
-            btn.disabled = true;
-            input.style.borderColor = 'var(--red)';
-            showTooltip('', errorTooltip);
-          } else {
-            btn.disabled = true;
-            errorRemove();
-          }
-        });
-      });
-    }
+    errorDiv.style.display = 'none';
+  } else {
+    input.classList.add('input__error');
+    errorDiv.style.display = 'block';
   }
 }
+
+function initCheckInput(input, dir) {
+  if (input) {
+    errorDivCreate(input, dir);
+
+    input.addEventListener('input', () => {
+      checkInput(input);
+    });
+  }
+}
+
+initCheckInput(document.querySelector('.buy-coins__input'), 'left');
+initCheckInput(document.querySelector('.add-subscribe-form__input'), 'bottom');
+initCheckInput(document.querySelectorAll('.form-order__input')[4], 'bottom');

@@ -11,6 +11,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+
+    .tooltip-bottom {
+      top: 100%;
+      width: 100%;
+    }
   }
 
   &__heading {

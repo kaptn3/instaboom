@@ -17,3 +17,7 @@
     height: 40px;
   }
 }
+
+input.input__error:focus {
+  border-color: var(--red);
+}
