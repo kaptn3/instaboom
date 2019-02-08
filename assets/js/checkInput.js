@@ -24,16 +24,28 @@ function checkInput(input) {
   }
 }
 
-function initCheckInput(input, dir) {
+function btnValue(input) {
+  if (input.checkValidity() && input.value) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function initCheckInput(input, dir, btn) {
   if (input) {
     errorDivCreate(input, dir);
 
     input.addEventListener('input', () => {
       checkInput(input);
+      if (btn) {
+        btn.disabled = btnValue(input); // активность кнопки
+      }
     });
   }
 }
 
-initCheckInput(document.querySelector('.buy-coins__input'), 'left');
-initCheckInput(document.querySelector('.add-subscribe-form__input'), 'bottom');
-initCheckInput(document.querySelectorAll('.form-order__input')[4], 'bottom');
+
+initCheckInput(document.querySelector('.buy-coins__input'), 'left', document.querySelector('.buy-coins__btn')); // пополнить баланс
+initCheckInput(document.querySelector('.add-subscribe-form__input'), 'bottom', document.querySelector('.add-subscribe-form__btn')); // добавить подписчиков
+initCheckInput(document.querySelectorAll('.form-order__input')[4], 'bottom', document.querySelectorAll('.form-order__btn')[2]); // хочу ещё просмотров
