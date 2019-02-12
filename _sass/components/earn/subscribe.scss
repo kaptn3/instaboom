@@ -25,6 +25,8 @@
 
 @media (max-width: 768px) {
   .subscribe {
+    overflow: hidden;
+    
     &__nav {
       flex-direction: column;
       align-items: flex-start;
