@@ -6,16 +6,13 @@
   const locationList = document.querySelector('.location__list');
   const locationArrow = document.querySelector('.location__arrow');
 
-  /*locationDiv.addEventListener('mouseover', function() {
-    locationArrow.style.backgroundImage = 'url(assets/icons/hover/up.svg)';
-  });*/
-
   locationDiv.addEventListener('click', function () {
     if (locationTooltip.hasAttribute('style')) {
       closeList();
     } else {
       locationTooltip.style.display = 'block';
       locationArrow.classList.add('location__arrow_opened');
+      locationDiv.style.borderColor = 'var(--main)';
     }
   });
   
@@ -39,6 +36,7 @@
   const closeList = () => {
     locationTooltip.removeAttribute('style');
     locationArrow.classList.remove('location__arrow_opened');
+    locationDiv.removeAttribute('style');
   }
 
   initList();
