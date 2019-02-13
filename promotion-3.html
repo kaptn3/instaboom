@@ -1,13 +1,195 @@
----
-layout: page
-title: Раскрутка
-scripts: [select, checkInput, tooltip, tooltip-add-remove, total-tooltip, form-order, tooltip-subscribe, desc-more, location]
----
+<!doctype html>
+<html lang="ru">
 
-<main>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Раскрутка</title>
+</head>
+
+<body>
+<div class="app">
+  <aside class="aside">
+  <div class="aside__wrapper">
+    <div>
+      <nav>
+        <ul class="nav">
+          <li><a href="profile.html" class="nav__item nav__item_profile "
+              title="Профиль">
+              <img src="https://placehold.it/32x32" alt="Фото профиля" class="nav__profile-photo">rakamakafit
+            </a></li>
+          <li><a class="nav__item  nav__item_active " href="promotion.html"
+              title="Раскрутка">Раскрутка</a></li>
+          <li><a class="nav__item " href="earn.html"
+              title="Заработать монеты">Заработать монеты</a></li>
+          <li><a class="nav__item " href="packets-offer.html"
+              title="Пакетные предложения">Пакетные предложения</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="aside__gift">
+      <img src="assets/icons/aside.svg" alt="">
+      <p class="gift__text">Подари друзьям 50 монет,<br>
+        чтобы они попробовали<br>
+        Instaboom.<br>
+        И получи 20 монет, когда они пополнят свой счёт.</p>
+      <p class="gift__text gift__text_mobile">Пригласи друзей <br>
+        на Instaboom и получи <br>20 монет</p>
+      <a href="invite-friends" class="gift__btn">Подробнее</a>
+    </div>
+  </div>
+</aside>
+  <div class="main">
+    <header class="header">
+  <button class="header__mobile-menu"></button>
+  <a class="header__logo" href="https://kaptn.ru/instaboom">
+    <img class="header__logo-img" src="assets/img/logo.svg" alt="Instaboom" title="Instaboom Logotype">Instaboom</a>
+  <a class="header__coins" href="up-balance">
+    <img class="coins__icon" src="assets/icons/coins.svg" alt=" ">
+    <div class="">
+      <span class="coins__value">10 000 <span>монет</span></span>
+      <span class="coins__up">Пополнить</span>
+    </div>
+  </a>
+</header>
+    <main>
   <h2 class="h1 main__header">Раскрутка</h2>
-  {% include account-info.html %}
-  {% include account-score.html done=true %}
+  <div class="account-info">
+  <img src="https://placehold.it/160x160" alt="" class="account-info__photo" width="160" height="160">
+  <div class="account-info__content">
+    <h3 class="h2 account-info__username tooltip"><span>rakamafit</span>
+      <i class="account-info__arrow "></i>
+      <div class="tooltip__container tooltip-bottom account-info__tooltip">
+        <i class="tooltip__arrow"></i>
+        <ul class="account-info__actions">
+          <li class="account-info__action account-info__action_add">Добавить аккаунт</li>
+          <li class="account-info__action account-info__action_remove">Убрать этот аккаунт из списка</li>
+        </ul>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+        <div class="select__item account-info__select-item"><img class="select__item-img" src="https://placehold.it/32x32" alt="Nanette">
+          <div><span class="select__item-name">Nanette</span><span class="select__item-desc">Hello</span></div>
+        </div>
+        
+      </div>
+    </h3>
+    <div class="account-info__desc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+      <p>Officia nihil natus ipsam blanditiis eum. Ipsa architecto accusantium non illo, veritatis consectetur natus</p>
+      <p>id aliquam nesciunt facilis cumque, autem iusto<br><a href="#">reiciendis</a></p>
+    </div>
+    <span class="account-info__desc-more">Развернуть описание</span>
+  </div>
+</div>
+  <div class="account-score">
+  <div class="account-score__counts">
+    <div class="account-score__count">
+      <span class="account-score__value">1634</span> подписок
+    </div>
+    <div class="account-score__count">
+      <span class="account-score__value">1634</span> подписчиков
+    </div>
+    <div class="account-score__count">
+      <span class="account-score__value">1634</span> подписчиков
+    </div>
+  </div>
+  <div class="account-score__add">
+    <span>
+      <button class="btn btn_purple account-score__btn">Добавить подписчиков</button>
+      <div class="total-tooltip account-score__tooltip">
+        <i class="total-tooltip__arrow account-score__tooltip-arrow"></i>
+        <div class="total-tooltip__wrapper account-score__tooltip-wrap">
+          <i class="total-tooltip__close"></i>
+          <h3 class="h2">Добавить новых подписчиков</h3>
+          <form action="" class="add-subscribe-form" method="GET">
+  <div class="add-subscribe-form__item">
+    <label class="tooltip add-subscribe-form__label">Количество подписчиков
+      <input type="number" min="1" class="input add-subscribe-form__input" name="Count">
+    </label>
+    <span class="add-subscribe-form__cost">Стоимость <b>500 монет</b></span>
+  </div>
+  <div class="add-subscribe-form__item">
+    <label class="add-subscribe-form__label">Местоположение
+      <!--input type="text" class="input add-subscribe-form__input"-->
+      <div class="tooltip">
+  <div title="Местоположение" class="input location">Не имеет значения
+    <i class="location__arrow"></i>
+  </div>
+  <input type="text" value="Не имеет значения" class="location__input" name="location" hidden>
+  <div class="tooltip__container tooltip-bottom location__tooltip">
+    <i class="tooltip__arrow"></i>
+    <div class="location__list"></div>
+  </div>
+</div>
+    </label>
+    <span class="tooltip add-subscribe-form__tooltip">
+      <button class="btn add-subscribe-form__preview-btn" type="button">предпросмотр аккаунта</button>
+      <div class="tooltip__container tooltip-top tooltip-preview">
+        <i class="tooltip__close tooltip-preview__close"></i>
+        <i class="tooltip__arrow"></i>
+        <img class="tooltip-preview__photo" src="https://placehold.it/160x160" alt="Photo">
+        <h4 class="tooltip-preview__username">rakamafit</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Vel numquam dolore nihil saepe.</p>
+      </div>
+    </span>
+  </div>
+  <div class="add-subscribe-form__item">
+    <label class="add-subscribe-form__label">Пол
+      <div class="sex-buttons add-subscribe-form__sex-buttons">
+        <input class="sex-button__checkbox" type="radio" name="sex" id="radio-1" value="Все" checked>
+        <label class="sex-button__label" for="radio-1">Все</label>
+        <input class="sex-button__checkbox" type="radio" name="sex" id="radio-2" value="Мужской">
+        <label class="sex-button__label" for="radio-2">М</label>
+        <input class="sex-button__checkbox" type="radio" name="sex" id="radio-3" value="Женский">
+        <label class="sex-button__label" for="radio-3">Ж</label>
+      </div>
+    </label>
+    <button class="btn btn_purple add-subscribe-form__btn" disabled>Заказать</button>
+  </div>
+</form>
+        </div>
+      </div>
+    </span>
+    
+    <span class="account-score__in-progress account-score__in-progress_done">Завершено: добавлено <b>100 из 100</b></span>
+    
+  </div>
+</div>
   <section class="account-content">
     <div class="account-content__no-photo">
       <img src="assets/icons/no-photo.svg" alt="">
@@ -15,3 +197,29 @@ scripts: [select, checkInput, tooltip, tooltip-add-remove, total-tooltip, form-o
     </div>
   </section>
 </main>
+  </div>
+</div>
+
+<script src="assets/js/select.js"></script>
+
+<script src="assets/js/checkInput.js"></script>
+
+<script src="assets/js/tooltip.js"></script>
+
+<script src="assets/js/tooltip-add-remove.js"></script>
+
+<script src="assets/js/total-tooltip.js"></script>
+
+<script src="assets/js/form-order.js"></script>
+
+<script src="assets/js/tooltip-subscribe.js"></script>
+
+<script src="assets/js/desc-more.js"></script>
+
+<script src="assets/js/location.js"></script>
+
+
+<script src="assets/js/aside.js"></script>
+</body>
+
+</html>

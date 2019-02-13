@@ -1,9 +1,62 @@
----
-layout: page
-title: Заработать монеты
-scripts: [tooltip, tooltip-bar, like, textarea, hammer.min, carousel]
----
-<main>
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Заработать монеты</title>
+</head>
+
+<body>
+<div class="app">
+  <aside class="aside">
+  <div class="aside__wrapper">
+    <div>
+      <nav>
+        <ul class="nav">
+          <li><a href="profile.html" class="nav__item nav__item_profile "
+              title="Профиль">
+              <img src="https://placehold.it/32x32" alt="Фото профиля" class="nav__profile-photo">rakamakafit
+            </a></li>
+          <li><a class="nav__item " href="promotion.html"
+              title="Раскрутка">Раскрутка</a></li>
+          <li><a class="nav__item  nav__item_active " href="earn.html"
+              title="Заработать монеты">Заработать монеты</a></li>
+          <li><a class="nav__item " href="packets-offer.html"
+              title="Пакетные предложения">Пакетные предложения</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="aside__gift">
+      <img src="assets/icons/aside.svg" alt="">
+      <p class="gift__text">Подари друзьям 50 монет,<br>
+        чтобы они попробовали<br>
+        Instaboom.<br>
+        И получи 20 монет, когда они пополнят свой счёт.</p>
+      <p class="gift__text gift__text_mobile">Пригласи друзей <br>
+        на Instaboom и получи <br>20 монет</p>
+      <a href="invite-friends" class="gift__btn">Подробнее</a>
+    </div>
+  </div>
+</aside>
+  <div class="main">
+    <header class="header">
+  <button class="header__mobile-menu"></button>
+  <a class="header__logo" href="https://kaptn.ru/instaboom">
+    <img class="header__logo-img" src="assets/img/logo.svg" alt="Instaboom" title="Instaboom Logotype">Instaboom</a>
+  <a class="header__coins" href="up-balance">
+    <img class="coins__icon" src="assets/icons/coins.svg" alt=" ">
+    <div class="">
+      <span class="coins__value">10 000 <span>монет</span></span>
+      <span class="coins__up">Пополнить</span>
+    </div>
+  </a>
+</header>
+    <main>
   <h2 class="h1 main__header">Заработать монеты</h2>
   <section class="invite-promo">
     <div class="invite-promo__icon">
@@ -33,7 +86,7 @@ scripts: [tooltip, tooltip-bar, like, textarea, hammer.min, carousel]
           <h4 class="accounts__login">rakamakafit</h4>
           <button class="btn accounts__btn">Подписаться</button>
         </div>
-        {% for i in (1..8) %}
+        
         <div class="accounts__item">
           <button class="accounts__close"></button>
           <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
@@ -44,7 +97,84 @@ scripts: [tooltip, tooltip-bar, like, textarea, hammer.min, carousel]
             dolorem omnis.</p>
           <button class="btn accounts__btn">Подписаться</button>
         </div>
-        {% endfor %}
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
+        <div class="accounts__item">
+          <button class="accounts__close"></button>
+          <img class="accounts__photo" src="https://placehold.it/160x160" alt="" width="160" height="160">
+          <h4 class="accounts__login">rakamakafit</h4>
+          <p class="p_size_14 accounts__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam
+            facilis
+            dolorem omnis.</p>
+          <button class="btn accounts__btn">Подписаться</button>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -96,7 +226,7 @@ scripts: [tooltip, tooltip-bar, like, textarea, hammer.min, carousel]
             <span class="rate-content__reward">+5 монет за просмотр</span>
           </div>
         </div>
-        {% for i in (1..2) %}
+        
         <div class="rate-content__item">
           <span class="rate-content__reward rate-content__reward_mobile">+5 монет за лайк</span>
           <img src="https://placehold.it/480x480" alt="" width="480" height="480">
@@ -118,8 +248,50 @@ scripts: [tooltip, tooltip-bar, like, textarea, hammer.min, carousel]
             </span>
           </div>
         </div>
-        {% endfor %}
+        
+        <div class="rate-content__item">
+          <span class="rate-content__reward rate-content__reward_mobile">+5 монет за лайк</span>
+          <img src="https://placehold.it/480x480" alt="" width="480" height="480">
+          <div class="rate-content__actions">
+            <div class="rate-content__rates rates">
+              <button class="rates__item rates__item_like" title="Туда"></button>
+              <button class="rates__item rates__item_dislike" title="Сюда"></button>
+            </div>
+            <span class="rate-content__reward">+5 монет за лайк</span>
+            <span class="tooltip rate-content__tooltip">
+              <button class="rate-content__bar" title="Подписаться/Пожаловаться"></button>
+              <div class="tooltip__container tooltip-top rate-content__tooltip-wrapper">
+                <i class="tooltip__arrow rate-content__tooltip-arrow"></i>
+                <ul class="rate-content__subscribe-actions">
+                  <li class="rate-content__subscribe-action">Подписаться</li>
+                  <li class="rate-content__subscribe-action">Пожаловаться</li>
+                </ul>
+              </div>
+            </span>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
 </main>
+  </div>
+</div>
+
+<script src="assets/js/tooltip.js"></script>
+
+<script src="assets/js/tooltip-bar.js"></script>
+
+<script src="assets/js/like.js"></script>
+
+<script src="assets/js/textarea.js"></script>
+
+<script src="assets/js/hammer.min.js"></script>
+
+<script src="assets/js/carousel.js"></script>
+
+
+<script src="assets/js/aside.js"></script>
+</body>
+
+</html>
