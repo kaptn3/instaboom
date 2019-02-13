@@ -1,6 +1,10 @@
-const showTooltip = (btn, tooltip, closeClass) => {
+const showTooltip = (btn, tooltip, closeClass, downContent) => {
   const toggleModal = () => {
     tooltip.classList.toggle('opened');
+
+    if (downContent) {
+      downContent();
+    }
   }
 
   const clickOutside = (e) => {

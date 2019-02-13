@@ -4,6 +4,7 @@
   align-items: center;
   height: 124px;
   border-bottom: 4px solid var(--grey);
+  transition: .4s margin-bottom;
 
   &__counts {
     display: flex;
