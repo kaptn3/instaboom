@@ -1,0 +1,31 @@
+<div class="account-score">
+  <div class="account-score__counts">
+    <div class="account-score__count">
+      <span class="account-score__value">1634</span> подписок
+    </div>
+    <div class="account-score__count">
+      <span class="account-score__value">1634</span> подписчиков
+    </div>
+    <div class="account-score__count">
+      <span class="account-score__value">1634</span> подписчиков
+    </div>
+  </div>
+  <div class="account-score__add">
+    <span>
+      <button class="btn btn_purple account-score__btn">Добавить подписчиков</button>
+      <div class="total-tooltip account-score__tooltip">
+        <i class="total-tooltip__arrow account-score__tooltip-arrow"></i>
+        <div class="total-tooltip__wrapper account-score__tooltip-wrap">
+          <i class="total-tooltip__close"></i>
+          <h3 class="h2">Добавить новых подписчиков</h3>
+          {% include add-subscribe.html %}
+        </div>
+      </div>
+    </span>
+    {% if include.done %}
+    <span class="account-score__in-progress account-score__in-progress_done">Завершено: добавлено <b>100 из 100</b></span>
+    {% else %}
+    <span class="account-score__in-progress">В процессе: добавлено <b>5 из 100</b></span>
+    {% endif %}
+  </div>
+</div>
