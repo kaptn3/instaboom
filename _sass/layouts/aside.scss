@@ -2,7 +2,6 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 256px;
-  background-color: #353845;
   color: #fff;
 
   &__wrapper {
@@ -11,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    background-color: #353845;
   }
 }
 
